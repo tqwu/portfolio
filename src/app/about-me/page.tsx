@@ -7,7 +7,7 @@ export default function AboutMe() {
 
     return (
         <main>
-            <div>This is the About Me page for Teresa's website.</div>
+            <div>About Me page.</div>
             <div>Count: {count}</div>
             <button onClick={() => setCount(count + 1)}>Increment</button>
         </main>
