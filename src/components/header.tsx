@@ -12,7 +12,7 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-white">
+    <header className="sticky top-0 bg-white">
 
       {/* Desktop View Start */}
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
@@ -40,19 +40,19 @@ export default function Example() {
 
         {/* Navigation Menu Start */}
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <Link href="#" className="text-base font-semibold leading-6 text-gray-900 hover:text-gray-300">
+          <Link href="#top" className="text-base font-semibold leading-6 text-gray-900 hover:text-gray-300">
             Home
           </Link>
-          <Link href="#" className="text-base font-semibold leading-6 text-gray-900 hover:text-gray-300">
+          <Link href="#skills" className="text-base font-semibold leading-6 text-gray-900 hover:text-gray-300">
             Skills
           </Link>
-          <Link href="#" className="text-base font-semibold leading-6 text-gray-900 hover:text-gray-300">
+          <Link href="#experience" className="text-base font-semibold leading-6 text-gray-900 hover:text-gray-300">
             Experience
           </Link>
-          <Link href="#" className="text-base font-semibold leading-6 text-gray-900 hover:text-gray-300">
+          <Link href="#projects" className="text-base font-semibold leading-6 text-gray-900 hover:text-gray-300">
             Projects
           </Link>
-          <Link href="#" className="text-base font-semibold leading-6 text-gray-900 hover:text-gray-300">
+          <Link href="#about-me" className="text-base font-semibold leading-6 text-gray-900 hover:text-gray-300">
             About Me
           </Link>
         </Popover.Group>
@@ -91,31 +91,31 @@ export default function Example() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 pt-6 pb-4">
                 <Link
-                  href="#"
+                  href="#top"
                   className="-mx-3 block rounded-lg px-3 py-1 text-base font-semibold leading-7 text-gray-900 hover:text-gray-300"
                 >
                   Home
                 </Link>
                 <Link
-                  href="#"
+                  href="#skills"
                   className="-mx-3 block rounded-lg px-3 py-1 text-base font-semibold leading-7 text-gray-900 hover:text-gray-300"
                 >
                   Skills
                 </Link>
                 <Link
-                  href="#"
+                  href="#experience"
                   className="-mx-3 block rounded-lg px-3 py-1 text-base font-semibold leading-7 text-gray-900 hover:text-gray-300"
                 >
                   Experience
                 </Link>
                 <Link
-                  href="#"
+                  href="#projects"
                   className="-mx-3 block rounded-lg px-3 py-1 text-base font-semibold leading-7 text-gray-900 hover:text-gray-300"
                 >
                   Projects
                 </Link>
                 <Link
-                  href="#"
+                  href="#about-me"
                   className="-mx-3 block rounded-lg px-3 py-1 text-base font-semibold leading-7 text-gray-900 hover:text-gray-300"
                 >
                   About Me
