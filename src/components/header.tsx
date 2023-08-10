@@ -15,7 +15,7 @@ export default function Example() {
     <header className="sticky top-0 bg-white">
 
       {/* Desktop View Start */}
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Navigation Panel Desktop">
 
         {/* Logo Start */}
         <div className="lg:flex lg:flex-1 lg:justify-start">
@@ -73,11 +73,8 @@ export default function Example() {
       {/* Mobile View Start */}
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-          <div className="flex items-center justify-between">
-            <span className="text-base font-semibold leading-6 text-gray-900">
-              Teresa Wu
-            </span>
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-64 overflow-y-auto bg-slate-200 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div className="flex items-center justify-end">
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -87,36 +84,43 @@ export default function Example() {
               <XMarkIcon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
-          <div className="mt-6 flow-root">
+
+          <div className="flex justify-center mt-6">
             <div className="-my-6 divide-y divide-gray-500/10">
+
               <div className="space-y-2 pt-6 pb-4">
                 <Link
                   href="#top"
-                  className="-mx-3 block rounded-lg px-3 py-1 text-base font-semibold leading-7 text-gray-900 hover:text-gray-300"
+                  className="-mx-3 block rounded-lg px-3 py-1 text-base text-center font-semibold leading-7 text-gray-900 hover:text-gray-300"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   Home
                 </Link>
                 <Link
                   href="#skills"
-                  className="-mx-3 block rounded-lg px-3 py-1 text-base font-semibold leading-7 text-gray-900 hover:text-gray-300"
+                  className="-mx-3 block rounded-lg px-3 py-1 text-base text-center font-semibold leading-7 text-gray-900 hover:text-gray-300"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   Skills
                 </Link>
                 <Link
                   href="#experience"
-                  className="-mx-3 block rounded-lg px-3 py-1 text-base font-semibold leading-7 text-gray-900 hover:text-gray-300"
+                  className="-mx-3 block rounded-lg px-3 py-1 text-base text-center font-semibold leading-7 text-gray-900 hover:text-gray-300"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   Experience
                 </Link>
                 <Link
                   href="#projects"
-                  className="-mx-3 block rounded-lg px-3 py-1 text-base font-semibold leading-7 text-gray-900 hover:text-gray-300"
+                  className="-mx-3 block rounded-lg px-3 py-1 text-base text-center font-semibold leading-7 text-gray-900 hover:text-gray-300"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   Projects
                 </Link>
                 <Link
                   href="#about-me"
-                  className="-mx-3 block rounded-lg px-3 py-1 text-base font-semibold leading-7 text-gray-900 hover:text-gray-300"
+                  className="-mx-3 block rounded-lg px-3 py-1 text-base text-center font-semibold leading-7 text-gray-900 hover:text-gray-300"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   About Me
                 </Link>
@@ -125,7 +129,7 @@ export default function Example() {
               <div className="py-3">
                 <Link
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-gray-300"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base text-center font-semibold leading-7 text-gray-900 hover:text-gray-300"
                 >
                   Resume
                 </Link>
