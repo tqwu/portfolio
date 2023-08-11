@@ -1,7 +1,13 @@
 
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import avatar_404 from '../../public/avatar_404.png'
+
+export const metadata: Metadata = {
+  title: 'Page Not Found',
+  description: `404 Error Page Not Found`,
+}
 
 export default function NotFound() {
     return (
