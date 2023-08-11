@@ -12,13 +12,13 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 bg-white">
+    <header className="sticky top-0 bg-pastel-green">
 
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Navigation Panel Desktop">
 
         {/* Logo Start */}
         <div className="lg:flex lg:flex-1 lg:justify-start">
-          <span className="text-base font-semibold leading-6 text-gray-900">
+          <span className="text-base font-semibold leading-6 text-amber-950">
             Teresa Wu
           </span>
         </div>
@@ -28,7 +28,7 @@ export default function Example() {
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-amber-950"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
@@ -39,19 +39,19 @@ export default function Example() {
 
         {/* Desktop Navigation Menu Start */}
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <Link href="#top" className="text-base font-semibold leading-6 text-gray-900 hover:text-gray-300">
+          <Link href="#top" className="text-base font-semibold leading-6 text-amber-950 hover:text-pastel-brown">
             Home
           </Link>
-          <Link href="#skills" className="text-base font-semibold leading-6 text-gray-900 hover:text-gray-300">
+          <Link href="#skills" className="text-base font-semibold leading-6 text-amber-950 hover:text-pastel-brown">
             Skills
           </Link>
-          <Link href="#experience" className="text-base font-semibold leading-6 text-gray-900 hover:text-gray-300">
+          <Link href="#experience" className="text-base font-semibold leading-6 text-amber-950 hover:text-pastel-brown">
             Experience
           </Link>
-          <Link href="#projects" className="text-base font-semibold leading-6 text-gray-900 hover:text-gray-300">
+          <Link href="#projects" className="text-base font-semibold leading-6 text-amber-950 hover:text-pastel-brown">
             Projects
           </Link>
-          <Link href="#about-me" className="text-base font-semibold leading-6 text-gray-900 hover:text-gray-300">
+          <Link href="#about-me" className="text-base font-semibold leading-6 text-amber-950 hover:text-pastel-brown">
             About Me
           </Link>
         </Popover.Group>
@@ -59,7 +59,7 @@ export default function Example() {
 
         {/* Resume Start */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link href="#" className="text-base font-semibold leading-6 text-gray-900 hover:text-gray-300">
+          <Link href="#" className="text-base font-semibold leading-6 text-amber-950 hover:text-pastel-brown">
             Resume
           </Link>
         </div>
@@ -101,7 +101,7 @@ export default function Example() {
               <div className="flex items-center justify-end pr-4">
                 <button
                   type="button"
-                  className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                  className="-m-2.5 rounded-md p-2.5 text-amber-950"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   <span className="sr-only">Close menu</span>
@@ -110,40 +110,40 @@ export default function Example() {
               </div>
 
               <div className="flex justify-center mt-6">
-                <div className="-my-6 divide-y divide-gray-500/10">
+                <div className="-my-6 divide-y divide-gray-950/10">
 
                   <div className="space-y-2 pt-6 pb-4">
                     <Link
                       href="#top"
-                      className="-mx-3 block rounded-lg px-3 py-1 text-base text-center font-semibold leading-7 text-gray-900 hover:text-gray-300"
+                      className="-mx-3 block rounded-lg px-3 py-1 text-base text-center font-semibold leading-7 text-amber-950 hover:text-pastel-brown"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       Home
                     </Link>
                     <Link
                       href="#skills"
-                      className="-mx-3 block rounded-lg px-3 py-1 text-base text-center font-semibold leading-7 text-gray-900 hover:text-gray-300"
+                      className="-mx-3 block rounded-lg px-3 py-1 text-base text-center font-semibold leading-7 text-amber-950 hover:text-pastel-brown"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       Skills
                     </Link>
                     <Link
                       href="#experience"
-                      className="-mx-3 block rounded-lg px-3 py-1 text-base text-center font-semibold leading-7 text-gray-900 hover:text-gray-300"
+                      className="-mx-3 block rounded-lg px-3 py-1 text-base text-center font-semibold leading-7 text-amber-950 hover:text-pastel-brown"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       Experience
                     </Link>
                     <Link
                       href="#projects"
-                      className="-mx-3 block rounded-lg px-3 py-1 text-base text-center font-semibold leading-7 text-gray-900 hover:text-gray-300"
+                      className="-mx-3 block rounded-lg px-3 py-1 text-base text-center font-semibold leading-7 text-amber-950 hover:text-pastel-brown"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       Projects
                     </Link>
                     <Link
                       href="#about-me"
-                      className="-mx-3 block rounded-lg px-3 py-1 text-base text-center font-semibold leading-7 text-gray-900 hover:text-gray-300"
+                      className="-mx-3 block rounded-lg px-3 py-1 text-base text-center font-semibold leading-7 text-amber-950 hover:text-pastel-brown"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       About Me
@@ -153,7 +153,7 @@ export default function Example() {
                   <div className="py-3">
                     <Link
                       href="#"
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base text-center font-semibold leading-7 text-gray-900 hover:text-gray-300"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base text-center font-semibold leading-7 text-amber-950 hover:text-pastel-brown"
                     >
                       Resume
                     </Link>

@@ -1,4 +1,6 @@
+
 import type { Config } from 'tailwindcss'
+import colors from 'tailwindcss/colors'
 
 const config: Config = {
   content: [
@@ -8,6 +10,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        'pastel-green': '#cdebc5',
+        'pastel-brown': '#c2a373',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

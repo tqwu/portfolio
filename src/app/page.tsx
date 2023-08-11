@@ -1,17 +1,13 @@
 
 import Header from '../components/header'
+import Intro from '../components/intro'
 
 export default function Home() {
   return (
     <>
       <Header />
       <main>
-        <div>
-          Hi! This is my website.
-        </div>
-        <div id="home">
-          This is the home section.
-        </div>
+        <Intro />
         <br />
         <br />
         <br />
