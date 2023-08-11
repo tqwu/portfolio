@@ -12,6 +12,8 @@ const config: Config = {
     extend: {
       colors: {
         'pastel-green': '#cdebc5',
+        'pastel-green-light': '#ddf2d1',
+        'pastel-green-dark': '#9fd4a3',
         'pastel-brown': '#c2a373',
       },
       backgroundImage: {
