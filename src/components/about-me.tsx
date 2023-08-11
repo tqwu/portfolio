@@ -8,7 +8,7 @@ export default function AboutMe() {
       <div className="grid grid-cols-7 grid-rows-4 max-w-3xl items-center font-normal leading-6 text-amber-950">
         <Image className="col-span-3 row-span-4 pr-5" src={profile} height={500} alt="Picture of Teresa Wu" />
         <div className="col-span-4 row-span-1">
-          My name is Teresa, and I'm a rising senior at the University of California, Santa Cruz, studying Computer Science (BS) and History of Consciousness.
+          My name is Teresa, and I&apos;m a rising senior at the University of California, Santa Cruz, studying Computer Science (BS) and History of Consciousness.
         </div>
         <div className="col-span-4 row-span-1">
           I currently work as a Full Stack Web Development Intern at Think Round Inc..
