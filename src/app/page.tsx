@@ -1,31 +1,18 @@
 
 import Header from '../components/header'
 import Intro from '../components/intro'
+import AboutMe from '../components/about-me'
+import Skills from '../components/skills'
 
 export default function Home() {
   return (
     <>
       <Header />
-      <main>
+      <main className="bg-amber-50">
         <Intro />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <AboutMe />
         <div id="skills">
-          This is the skills section.
+          <Skills />
         </div>
         <br />
         <br />

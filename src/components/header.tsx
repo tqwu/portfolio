@@ -52,7 +52,7 @@ export default function Example() {
             Projects
           </Link>
           <Link href="#about-me" className="text-base font-semibold leading-6 text-amber-950 hover:text-pastel-brown">
-            About Me
+            More About Me
           </Link>
         </Popover.Group>
         {/* Desktop Navigation Menu End */}
@@ -146,7 +146,7 @@ export default function Example() {
                       className="-mx-3 block rounded-lg px-3 py-1 text-base text-center font-semibold leading-7 text-amber-950 hover:text-pastel-brown"
                       onClick={() => setMobileMenuOpen(false)}
                     >
-                      About Me
+                      More About Me
                     </Link>
                   </div>
 
