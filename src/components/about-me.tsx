@@ -5,7 +5,7 @@ import profile from '../../public/profile.png'
 export default function AboutMe() {
   return (
     <div className="py-3 sm:py-12 grid place-items-center">
-      <div className="grid grid-cols-7 grid-rows-4 sm:grid-rows-1 max-w-3xl text-xs sm:text-base font-normal leading-4 sm:leading-6 text-amber-950">
+      <div className="grid grid-cols-7 grid-rows-4 sm:grid-rows-1 max-w-3xl text-sm sm:text-base font-normal leading-4 sm:leading-6 text-amber-950">
         <Image className="col-span-3 row-span-3 sm:row-span-1 justify-self-center self-center px-2 lg:p-0" src={profile} height={300} alt="Picture of Teresa Wu" />
 
         {/* Desktop paragraph start */}
@@ -20,7 +20,7 @@ export default function AboutMe() {
             I aspire to continue to build efficient applications that provide optimal user experiences.
           </div>
           <div>
-            Check out my LinkedIn to learn more about me, or explore my GitHub to see some of my projects! 
+            Check out my LinkedIn to learn more about me, or explore my GitHub to see some of my projects!
           </div>
         </div>
         {/* Desktop paragraph end */}
