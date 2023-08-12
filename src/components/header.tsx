@@ -70,8 +70,8 @@ export default function Example() {
 
       {/* Mobile View Start */}
       <Transition show={mobileMenuOpen} as={Fragment}>
-        <Dialog onClose={() => setMobileMenuOpen(false)}>
-        {/* <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}> */}
+        {/* <Dialog onClose={() => setMobileMenuOpen(false)}> */}
+        <Dialog as="div" className="lg:hidden" onClose={setMobileMenuOpen}>
 
           {/* The backdrop, rendered as a fixed sibling to the panel container */}
           <Transition.Child
