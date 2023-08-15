@@ -5,9 +5,21 @@ import { Tab } from '@headlessui/react'
 
 const experiences = [
   {
+    name: `Web Dev Intern`,
+    title: `Full Stack Developer Intern`,
+    company: `Think Round Inc.`,
+    dates: `June 2023 - Present`,
+    description: [
+        `Collaborate with the UX-UI Prototypers, 3D Modelers, and Unity Developers to develop and maintain the web application and database for The Center project`,
+        `Develop and maintain the back-end and front-end of the web application `,
+        `Ensure that the web application is optimized for performance and scalability`,
+    ],
+  },
+  {
     name: `Mock Trial TA`,
     title: `Mock Trial Workshop Teaching Assistant`,
-    company: `UC Santa Cruz`,
+    company: `UCSC`,
+    dates: `March 2023 - Present`,
     description: [
       `Assisting with course presentations and leading interactive activities`,
       `Providing constructive feedback on case analyses, witness examinations, and courtroom statements`
@@ -16,7 +28,8 @@ const experiences = [
   {
     name: `Lead Peer Advisor`,
     title: `Lead Peer Advisor & Editor-in-Chief`,
-    company: `UC Santa Cruz`,
+    company: `UCSC`,
+    dates: `September 2022 - Present`,
     description: [
       `Leading onboarding for new peer advisors`,
       `Assisting with academic concerns of UCSC students`,
@@ -26,7 +39,8 @@ const experiences = [
   {
     name: `Research Intern`,
     title: `Research Intern`,
-    company: `CAVEAT: Center for Applied Values and Ethics in Advanced Technologies`,
+    company: `CAVEAT`,
+    dates: `March 2021 - June 2021`,
     description: [
       `Conducted research and presented a proposed project to study the proliferation of hate speech within social media`,
       `Collaborated with fellow interns to redesign CAVEAT's logo and website`,
@@ -39,12 +53,14 @@ export default function Experience() {
     <div className="py-3 sm:py-12 grid place-items-center">
       <div className="grid grid-cols-7 grid-rows-3 max-w-2xl text-base font-normal leading-6 text-amber-950">
         <Tab.Group vertical>
-          <Tab.List className="col-span-2 row-span-3 flex flex-col gap-8 justify-self-start">
+          <Tab.List className="col-span-2 row-span-3 flex flex-col gap-7 justify-self-start">
             {experiences.map((experience) => (
             //   <Tab key="experience.name" className="text-left">{experience.name}</Tab>
-              <Tab as={Fragment} key="experience.name">
+              <Tab as={Fragment} key={experience.name}>
                 {({ selected }) => (
-                  <div className={`${selected ? 'bg-pastel-green/50' : 'bg-none'} rounded-3xl px-4 py-2`}>
+                  <div className={`${selected ? 'bg-pastel-green/50' : 'bg-none'}
+                    outline-amber-900/50 rounded-3xl px-4 py-2`
+                  }>
                     <button>
                       {experience.name}
                     </button>
@@ -53,14 +69,15 @@ export default function Experience() {
               </Tab>
             ))} 
           </Tab.List>
-          <Tab.Panels className="col-span-5 row-span-3 bg-pastel-green/50 rounded-3xl p-5 h-60">
+          <Tab.Panels className="col-span-5 row-span-3 bg-pastel-green/50 rounded-3xl h-60 py-3 px-5">
             {experiences.map((experience) => (
-              <Tab.Panel key="experience.company">
-                <div>{experience.title}</div>
-                <div>{experience.company}</div>
-                <ul className="list-disc px-4">
+              <Tab.Panel key={experience.company}>
+                <span className="pb-2">{experience.title}</span>
+                <span className="text-amber-900/70 pb-2"> at {experience.company}</span>
+                <div className="text-sm pb-2">{experience.dates}</div>
+                <ul className="text-sm list-disc px-4">
                     {experience.description.map((item, index) => (
-                        <li key={index}>{item}</li>
+                        <li key={index} className="p-1">{item}</li>
                     ))}
                 </ul>
               </Tab.Panel>
