@@ -3,6 +3,7 @@ import Header from '../components/header'
 import Intro from '../components/intro'
 import AboutMe from '../components/about-me'
 import Skills from '../components/skills'
+import Experience from '../components/experience'
 
 export default function Home() {
   return (
@@ -31,7 +32,7 @@ export default function Home() {
         <br />
         <br />
         <div id="experience">
-          This is the experience section.
+          <Experience />
         </div>
         <br />
         <br />
