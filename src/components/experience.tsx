@@ -40,12 +40,12 @@ export default function Experience() {
         <Tab.Group vertical>
           <Tab.List className="col-span-2 row-span-3 flex flex-col gap-8">
             {experiences.map((experience) => (
-              <Tab>{experience.name}</Tab>
+              <Tab key="experience.name">{experience.name}</Tab>
             ))} 
           </Tab.List>
           <Tab.Panels className="col-span-5 row-span-3">
             {experiences.map((experience) => (
-              <Tab.Panel>
+              <Tab.Panel key="experience.company">
                 <div>{experience.title}</div>
                 <div>{experience.company}</div>
                 <div>{experience.description}</div>
