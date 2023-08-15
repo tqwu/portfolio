@@ -18,7 +18,7 @@ export default function AboutMe() {
         </div>
         {/* Mobile text end */}
 
-        <Image className="sm:col-span-3 sm:row-span-1 justify-self-center self-center px-2 lg:p-0" src={profile} height={300} alt="Picture of Teresa Wu" />
+        <Image className="sm:col-span-3 sm:row-span-1 justify-self-center self-center p-2 lg:p-0" src={profile} height={300} alt="Picture of Teresa Wu" />
 
         {/* Desktop paragraph start */}
         <div className="hidden sm:grid col-span-4 gap-5 pt-2 pr-7">
