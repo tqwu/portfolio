@@ -42,7 +42,7 @@ export default function Experience() {
           <Tab.List className="col-span-2 row-span-3 flex flex-col gap-8 justify-self-start">
             {experiences.map((experience) => (
             //   <Tab key="experience.name" className="text-left">{experience.name}</Tab>
-              <Tab as={Fragment}>
+              <Tab as={Fragment} key="experience.name">
                 {({ selected }) => (
                   <div className={`${selected ? 'bg-pastel-green/50' : 'bg-none'} rounded-3xl px-4 py-2`}>
                     <button>
@@ -59,8 +59,8 @@ export default function Experience() {
                 <div>{experience.title}</div>
                 <div>{experience.company}</div>
                 <ul className="list-disc px-4">
-                    {experience.description.map((item) => (
-                        <li>{item}</li>
+                    {experience.description.map((item, index) => (
+                        <li key={index}>{item}</li>
                     ))}
                 </ul>
               </Tab.Panel>
