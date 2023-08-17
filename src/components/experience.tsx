@@ -51,25 +51,27 @@ const experiences = [
 export default function Experience() {
   return (
     <div className="py-3 sm:py-12 grid place-items-center">
-      <div className="grid grid-cols-7 grid-rows-3 max-w-2xl text-base font-normal leading-6 text-amber-950">
+      <div className="grid sm:grid-cols-7 sm:grid-rows-3 max-w-2xl text-base font-normal leading-6 text-amber-950">
         <Tab.Group vertical>
-          <Tab.List className="col-span-2 row-span-3 flex flex-col gap-7 justify-self-start">
-            {experiences.map((experience) => (
-            //   <Tab key="experience.name" className="text-left">{experience.name}</Tab>
-              <Tab as={Fragment} key={experience.name}>
-                {({ selected }) => (
-                  <div className={`${selected ? 'bg-pastel-green/50' : 'bg-none'}
-                    outline-amber-900/50 rounded-3xl px-4 py-2`
-                  }>
-                    <button>
-                      {experience.name}
-                    </button>
-                  </div>
-                )}
-              </Tab>
-            ))} 
+          <Tab.List className="sm:col-span-2 sm:row-span-3 flex overflow-x-auto sm:overflow-hidden px-2 sm:pr-0 pb-2 sm:pb-0">
+            <div className="flex sm:flex-col sm:gap-7">
+              {experiences.map((experience) => (
+              //   <Tab key="experience.name" className="text-left">{experience.name}</Tab>
+                <Tab as={Fragment} key={experience.name}> 
+                  {({ selected }) => (
+                    <span className={`${selected ? 'bg-pastel-green/50' : 'bg-none'}
+                      outline-amber-900/50 rounded-3xl px-4 py-2 w-max sm:w-auto`
+                    }>
+                      <button>
+                        {experience.name}
+                      </button>
+                    </span>
+                  )}
+                </Tab>
+              ))} 
+            </div>
           </Tab.List>
-          <Tab.Panels className="col-span-5 row-span-3 bg-pastel-green/50 rounded-3xl h-60 py-3 px-5">
+          <Tab.Panels className="sm:col-span-5 sm:row-span-3 bg-pastel-green/50 rounded-3xl h-fit min-h-custom sm:h-60 py-3 px-5 mx-2 sm:ml-0">
             {experiences.map((experience) => (
               <Tab.Panel key={experience.company}>
                 <span className="pb-2">{experience.title}</span>
