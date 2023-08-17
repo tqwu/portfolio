@@ -71,7 +71,7 @@ export default function Experience() {
               ))} 
             </div>
           </Tab.List>
-          <Tab.Panels className="sm:col-span-5 sm:row-span-3 bg-pastel-green/50 rounded-3xl h-fit min-h-custom sm:h-60 py-3 px-5 mx-2 sm:ml-0">
+          <Tab.Panels className="sm:col-span-5 sm:row-span-3 bg-pastel-green/50 rounded-3xl h-fit min-h-custom sm:min-h-0 sm:h-60 py-3 px-5 mx-2 sm:ml-0">
             {experiences.map((experience) => (
               <Tab.Panel key={experience.company}>
                 <span className="pb-2">{experience.title}</span>
