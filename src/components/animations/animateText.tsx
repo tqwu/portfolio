@@ -13,7 +13,7 @@ export default function AnimText({ delay }: IAnimTextProps) {
   const count = useMotionValue(0);
   const rounded = useTransform(count, (latest) => Math.round(latest));
   const displayText = useTransform(rounded, (latest) =>
-    baseText.slice(0, latest)
+    baseText.slice(0, latest),
   );
 
   useEffect(() => {
@@ -24,7 +24,7 @@ export default function AnimText({ delay }: IAnimTextProps) {
       ease: "easeInOut",
       onComplete: () => {
         setDone(true);
-      }
+      },
     });
     return controls.stop;
     // eslint-disable-next-line react-hooks/exhaustive-deps

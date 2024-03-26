@@ -1,21 +1,19 @@
-'use client'
-import Link from 'next/link'
+"use client";
+import Link from "next/link";
 
-import { useState, Fragment } from 'react'
-import { Dialog, Popover, Transition } from '@headlessui/react'
-import {
-  Bars3Icon,
-  XMarkIcon,
-} from '@heroicons/react/24/outline'
+import { useState, Fragment } from "react";
+import { Dialog, Popover, Transition } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 export default function Example() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="sticky top-0 bg-navy">
-
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Navigation Panel Desktop">
-
+      <nav
+        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        aria-label="Navigation Panel Desktop"
+      >
         {/* Logo Start */}
         <div className="lg:flex lg:flex-1 lg:justify-start">
           <span className="text-base font-semibold leading-6 text-slate-200">
@@ -23,7 +21,7 @@ export default function Example() {
           </span>
         </div>
         {/* Logo End */}
-        
+
         {/* Menu Button Start */}
         <div className="flex lg:hidden">
           <button
@@ -39,19 +37,34 @@ export default function Example() {
 
         {/* Desktop Navigation Menu Start */}
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <Link href="#top" className="text-base font-semibold leading-6 text-slate-200 hover:text-slate-500">
+          <Link
+            href="#top"
+            className="text-base font-semibold leading-6 text-slate-200 hover:text-slate-500"
+          >
             Home
           </Link>
-          <Link href="#skills" className="text-base font-semibold leading-6 text-slate-200 hover:text-slate-500">
+          <Link
+            href="#skills"
+            className="text-base font-semibold leading-6 text-slate-200 hover:text-slate-500"
+          >
             Skills
           </Link>
-          <Link href="#experience" className="text-base font-semibold leading-6 text-slate-200 hover:text-slate-500">
+          <Link
+            href="#experience"
+            className="text-base font-semibold leading-6 text-slate-200 hover:text-slate-500"
+          >
             Experience
           </Link>
-          <Link href="#projects" className="text-base font-semibold leading-6 text-slate-200 hover:text-slate-500">
+          <Link
+            href="#projects"
+            className="text-base font-semibold leading-6 text-slate-200 hover:text-slate-500"
+          >
             Projects
           </Link>
-          <Link href="#about-me" className="text-base font-semibold leading-6 text-slate-200 hover:text-slate-500">
+          <Link
+            href="#about-me"
+            className="text-base font-semibold leading-6 text-slate-200 hover:text-slate-500"
+          >
             More About Me
           </Link>
         </Popover.Group>
@@ -59,19 +72,19 @@ export default function Example() {
 
         {/* Resume Start */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link href="#" className="text-base font-semibold leading-6 text-slate-200 hover:text-slate-500">
+          <Link
+            href="#"
+            className="text-base font-semibold leading-6 text-slate-200 hover:text-slate-500"
+          >
             Resume
           </Link>
         </div>
         {/* Resume End */}
-
       </nav>
-
 
       {/* Mobile View Start */}
       <Transition show={mobileMenuOpen} as={Fragment}>
         <Dialog as="div" className="lg:hidden" onClose={setMobileMenuOpen}>
-
           {/* The backdrop, rendered as a fixed sibling to the panel container */}
           <Transition.Child
             as={Fragment}
@@ -110,7 +123,6 @@ export default function Example() {
 
               <div className="flex justify-center mt-6">
                 <div className="-my-6 divide-y divide-gray-950/10">
-
                   <div className="space-y-2 pt-6 pb-4">
                     <Link
                       href="#top"
@@ -157,16 +169,13 @@ export default function Example() {
                       Resume
                     </Link>
                   </div>
-
                 </div>
               </div>
             </Dialog.Panel>
           </Transition.Child>
-          
         </Dialog>
       </Transition>
       {/* Mobile View End */}
-
     </header>
-  )
+  );
 }

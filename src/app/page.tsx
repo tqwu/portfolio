@@ -1,9 +1,8 @@
-
-import Header from '../components/header'
-import Intro from '../components/intro'
-import AboutMe from '../components/about-me'
-import Skills from '../components/skills'
-import Experience from '../components/experience'
+import Header from "../components/header";
+import Intro from "../components/intro";
+import AboutMe from "../components/about-me";
+import Skills from "../components/skills";
+import Experience from "../components/experience";
 
 export default function Home() {
   return (
@@ -50,9 +49,7 @@ export default function Home() {
         <br />
         <br />
         <br />
-        <div id="projects">
-          This is the projects section.
-        </div>
+        <div id="projects">This is the projects section.</div>
         <br />
         <br />
         <br />
@@ -69,10 +66,8 @@ export default function Home() {
         <br />
         <br />
         <br />
-        <div id="about-me">
-          This is the about me section.
-        </div>
+        <div id="about-me">This is the about me section.</div>
       </main>
     </>
-  )
+  );
 }

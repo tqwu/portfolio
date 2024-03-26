@@ -12,14 +12,14 @@ export default function RedoAnimText({ delay }: IRedoAnimTextProps) {
     "engineer ",
     "designer ",
     "tutor ",
-    "plant lover "
+    "plant lover ",
   ];
 
   const baseText = useTransform(textIndex, (latest) => texts[latest] || "");
   const count = useMotionValue(0);
   const rounded = useTransform(count, (latest) => Math.round(latest));
   const displayText = useTransform(rounded, (latest) =>
-    baseText.get().slice(0, latest)
+    baseText.get().slice(0, latest),
   );
   const updatedThisRound = useMotionValue(true);
 
@@ -43,7 +43,7 @@ export default function RedoAnimText({ delay }: IRedoAnimTextProps) {
           }
           updatedThisRound.set(true);
         }
-      }
+      },
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

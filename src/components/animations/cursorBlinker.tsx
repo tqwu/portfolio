@@ -8,9 +8,9 @@ const cursorVariants = {
       repeat: Infinity,
       repeatDelay: 0,
       ease: "linear",
-      times: [0, 0.5, 0.5, 1]
-    }
-  }
+      times: [0, 0.5, 0.5, 1],
+    },
+  },
 };
 
 export default function CursorBlinker() {
