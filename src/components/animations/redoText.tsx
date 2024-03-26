@@ -45,6 +45,7 @@ export default function RedoAnimText({ delay }: IRedoAnimTextProps) {
         }
       }
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return <motion.span className="inline">{displayText}</motion.span>;
