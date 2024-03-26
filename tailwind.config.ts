@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       colors: {
         'navy': '#171721',
+        'navy-light': '#192442',
         'pastel-green-light': '#ddf2d1',
         'pastel-green-dark': '#9fd4a3',
         'pastel-brown': '#c2a373',

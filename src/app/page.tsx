@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="bg-amber-50">
+      <main className="bg-navy-light">
         <Intro />
         <AboutMe />
         <div id="skills">
