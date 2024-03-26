@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'pastel-green': '#cdebc5',
+        'navy': '#171721',
         'pastel-green-light': '#ddf2d1',
         'pastel-green-dark': '#9fd4a3',
         'pastel-brown': '#c2a373',

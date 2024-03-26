@@ -6,11 +6,11 @@ import avatar_mobile from '../../public/avatar_mobile.png'
 export default function Intro() {
   return (
     <>
-      <div className="h-fit sm:h-96 bg-[#cdebc5]">
+      <div className="h-fit sm:h-96 bg-navy">
 
         {/* Desktop elements start */}
           <div className="hidden sm:columns-2 sm:pt-16 sm:flex sm:flex-initial sm:justify-center">
-            <div className="pt-14 pl-8 pr-10 text-center text-3xl font-semibold leading-9 text-amber-950">
+            <div className="pt-14 pl-8 pr-10 text-center text-3xl font-semibold leading-9 text-slate-200">
               <div className="pb-4">Hi! I&apos;m Teresa.</div>
               <div>I turn coffee into code for the web.</div>
             </div>
@@ -20,7 +20,7 @@ export default function Intro() {
 
         {/* Mobile elements start */}
         <div className="pb-5 grid grid-rows-5 grid-cols-3 items-center content-center">
-          <div className="px-2 row-span-2 col-span-3 sm:hidden text-center text-2xl font-semibold leading-7 text-amber-950">
+          <div className="px-2 row-span-2 col-span-3 sm:hidden text-center text-2xl font-semibold leading-7 text-slate-200">
             <div className="pb-4">Hi! I&apos;m Teresa.</div>
             <div>I turn coffee into code for the web.</div>
           </div>
