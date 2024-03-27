@@ -33,7 +33,7 @@ export default function AboutMe() {
             of Consciousness.
           </div>
           <div>
-            I&apos;m currently working on an advanced memory utilization analytics project for Nutanix to gain better insight into their cloud infastructure memory usage.
+            I&apos;m currently working on an advanced memory utilization analytics system for Nutanix to gain better insight into their cloud infastructure memory usage.
           </div>
           <div>
             I aspire to continue to build efficient applications that provide

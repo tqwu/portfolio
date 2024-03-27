@@ -62,7 +62,7 @@ const experiences = [
 export default function Experience() {
 
   return (
-    <div className="px-5 text-slate-200 font-mono grid">
+    <div className="px-5 text-slate-200 font-mono grid py-12">
 
       <div className="text-5xl place-self-center">Experiences</div>
 
