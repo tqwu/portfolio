@@ -62,12 +62,11 @@ const experiences = [
 export default function Experience() {
 
   return (
-    <div className="px-5 text-slate-200 font-mono grid grid-cols-6">
+    <div className="px-5 text-slate-200 font-mono grid">
 
-      <div className="text-5xl col-span-6 place-self-center">Experiences</div>
+      <div className="text-5xl place-self-center">Experiences</div>
 
-      <div className="col-span-1"/>
-      <div className="col-span-3 justify-self-end w-full">
+      <div className="place-self-center w-2/3">
         {experiences.map((experience) => (
           <div key={experience.title} className="grid gap-1 grid-cols-3 border-2 rounded-xl border-slate-500 py-6 px-3 my-12 my-2">
             <div className="col-span-2 pl-2">
@@ -75,7 +74,7 @@ export default function Experience() {
               <div>{experience.location}</div>
               <div>{experience.dates}</div>
             </div>
-            <div className="col-span-1 p-1.5 mr-3 w-64 grid justify-self-end items-center">
+            <div className="col-span-1 p-1.5 mr-3 w-64 grid justify-self-end items-center hidden md:block">
               <Image
                 className=""
                 src={experience.logo}
@@ -94,82 +93,6 @@ export default function Experience() {
             </ul>
           </div>
         ))}
-      </div>
-
-      <div className="col-span-1 justify-self-start my-12 pl-24">
-        <Stepper
-          orientation="vertical"
-          sx={{
-            '--Stepper-verticalGap': '2.5rem',
-            '--StepIndicator-size': '2.5rem',
-            '--Step-gap': '1rem',
-            '--Step-connectorInset': '0.5rem',
-            '--Step-connectorRadius': '1rem',
-            '--Step-connectorThickness': '4px',
-            '--joy-palette-success-solidBg': 'var(--joy-palette-success-400)',
-            [`& .${stepClasses.completed}`]: {
-              '&::after': { bgcolor: 'success.solidBg' },
-            },
-            [`& .${stepClasses.active}`]: {
-              [`& .${stepIndicatorClasses.root}`]: {
-                border: '4px solid',
-                borderColor: '#fff',
-                boxShadow: (theme) => `0 0 0 1px ${theme.vars.palette.primary[500]}`,
-              },
-            },
-            [`& .${stepClasses.disabled} *`]: {
-              color: 'neutral.softDisabledColor',
-            },
-            [`& .${typographyClasses['title-sm']}`]: {
-              textTransform: 'uppercase',
-              letterSpacing: '1px',
-              fontSize: '10px',
-            },
-          }}
-        >
-          <Step
-            completed
-            indicator={
-              <StepIndicator variant="solid" color="success">
-              </StepIndicator>
-            }
-          >
-            <div>
-              <Typography level="title-sm">Step 1</Typography>
-              Basic Details
-            </div>
-          </Step>
-          <Step
-            completed
-            indicator={
-              <StepIndicator variant="solid" color="success">
-              </StepIndicator>
-            }
-          >
-            <div>
-              <Typography level="title-sm">Step 2</Typography>
-              Company Details
-            </div>
-          </Step>
-          <Step
-            active
-            indicator={
-              <StepIndicator variant="solid" color="primary">
-              </StepIndicator>
-            }
-          >
-            <div>
-              <Typography level="title-sm">Step 3</Typography>
-              Subscription plan
-            </div>
-          </Step>
-          <Step disabled indicator={<StepIndicator>3</StepIndicator>}>
-            <div>
-              <Typography level="title-sm">Step 4</Typography>
-              Payment details
-            </div>
-          </Step>
-        </Stepper>
       </div>
     </div>
   );
