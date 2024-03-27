@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import Stepper from '@mui/joy/Stepper';
-import Step, { stepClasses } from '@mui/joy/Step';
-import StepIndicator, { stepIndicatorClasses } from '@mui/joy/StepIndicator';
-import Typography, { typographyClasses } from '@mui/joy/Typography';
+import Stepper from "@mui/joy/Stepper";
+import Step, { stepClasses } from "@mui/joy/Step";
+import StepIndicator, { stepIndicatorClasses } from "@mui/joy/StepIndicator";
+import Typography, { typographyClasses } from "@mui/joy/Typography";
 
 const experiences = [
   {
@@ -60,15 +60,16 @@ const experiences = [
 ];
 
 export default function Experience() {
-
   return (
     <div className="px-5 text-slate-200 font-mono grid py-12">
-
       <div className="text-5xl place-self-center">Experiences</div>
 
       <div className="place-self-center w-2/3">
         {experiences.map((experience) => (
-          <div key={experience.title} className="grid gap-1 grid-cols-3 border-2 rounded-xl border-slate-500 py-6 px-3 my-12 my-2">
+          <div
+            key={experience.title}
+            className="grid gap-1 grid-cols-3 border-2 rounded-xl border-slate-500 py-6 px-3 my-12 my-2"
+          >
             <div className="col-span-2 pl-2">
               <div className="text-2xl pb-2">{experience.title}</div>
               <div>{experience.location}</div>

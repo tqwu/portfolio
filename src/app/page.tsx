@@ -11,7 +11,7 @@ export default function Home() {
       <main className="bg-navy-light">
         <Intro />
         <AboutMe />
-        <div id="skills" style={{ scrollMarginTop: '60px' }}>
+        <div id="skills" style={{ scrollMarginTop: "60px" }}>
           <Skills />
         </div>
         <br />
@@ -30,7 +30,11 @@ export default function Home() {
         <br />
         <br />
         <br />
-        <div id="experience" className="bg-navy" style={{ scrollMarginTop: '60px' }}>
+        <div
+          id="experience"
+          className="bg-navy"
+          style={{ scrollMarginTop: "60px" }}
+        >
           <Experience />
         </div>
         <br />
@@ -49,7 +53,9 @@ export default function Home() {
         <br />
         <br />
         <br />
-        <div id="projects"  style={{ scrollMarginTop: '60px' }}>This is the projects section.</div>
+        <div id="projects" style={{ scrollMarginTop: "60px" }}>
+          This is the projects section.
+        </div>
         <br />
         <br />
         <br />
@@ -66,7 +72,9 @@ export default function Home() {
         <br />
         <br />
         <br />
-        <div id="about-me" style={{ scrollMarginTop: '60px' }}>This is the about me section.</div>
+        <div id="about-me" style={{ scrollMarginTop: "60px" }}>
+          This is the about me section.
+        </div>
       </main>
     </>
   );
