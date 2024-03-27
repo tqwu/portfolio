@@ -1,10 +1,5 @@
 "use client";
-
 import Image from "next/image";
-import Stepper from "@mui/joy/Stepper";
-import Step, { stepClasses } from "@mui/joy/Step";
-import StepIndicator, { stepIndicatorClasses } from "@mui/joy/StepIndicator";
-import Typography, { typographyClasses } from "@mui/joy/Typography";
 
 const experiences = [
   {
@@ -61,8 +56,8 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <div className="px-5 text-slate-200 font-mono grid py-12">
-      <div className="text-5xl place-self-center">Experiences</div>
+    <div className="px-5 text-slate-200 font-mono grid pt-12 pb-16">
+      <div className="text-5xl place-self-center pb-8">Experiences</div>
 
       <div className="place-self-center w-2/3">
         {experiences.map((experience) => (

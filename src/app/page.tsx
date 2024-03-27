@@ -11,25 +11,13 @@ export default function Home() {
       <main className="bg-navy-light">
         <Intro />
         <AboutMe />
-        <div id="skills" style={{ scrollMarginTop: "60px" }}>
+        <div
+          id="skills"
+          className="bg-navy"
+          style={{ scrollMarginTop: "60px" }}
+        >
           <Skills />
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
         <div
           id="experience"
           className="bg-navy"
