@@ -9,8 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        navy: "#171721",
+        "navy": "#171721",
         "navy-light": "#192442",
+        "neon-pink": "#ff3c68",
+        "neon-orange": "#ff7130",
+        "neon-purple": "#872b97",
         "pastel-green-light": "#ddf2d1",
         "pastel-green-dark": "#9fd4a3",
         "pastel-brown": "#c2a373",
