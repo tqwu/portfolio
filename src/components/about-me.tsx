@@ -4,17 +4,16 @@ import profile from "../../public/profile.png";
 export default function AboutMe() {
   return (
     <div className="py-3 sm:py-12 grid place-items-center">
-      <div className="grid sm:grid-cols-7 sm:grid-rows-1 max-w-3xl text-base font-normal leading-6 text-amber-950">
+      <div className="grid sm:grid-cols-7 sm:grid-rows-1 max-w-3xl text-base font-normal leading-6 text-slate-200">
         {/* Mobile text start */}
         <div className="block sm:hidden pt-4 px-3 text-center">
           <div className="pb-2">
-            My name is Teresa, and I&apos;m a rising senior at the University of
-            California, Santa Cruz, studying Computer Science (BS) and History
+            I'm Teresa, a senior at the University of
+            California, Santa Cruz, studying Computer Science BS and History
             of Consciousness.
           </div>
           <div className="pb-2">
-            I currently work as a Full Stack Web Development Intern at Think
-            Round Inc..
+            I'm currently working on an advanced memory utilization analytics project for Nutanix to gain better insight into their cloud infastructure memory usage.
           </div>
         </div>
         {/* Mobile text end */}
@@ -29,13 +28,12 @@ export default function AboutMe() {
         {/* Desktop paragraph start */}
         <div className="hidden sm:grid col-span-4 gap-5 pt-2 pr-7">
           <div>
-            My name is Teresa, and I&apos;m a rising senior at the University of
-            California, Santa Cruz, studying Computer Science (BS) and History
+            I'm Teresa, a senior at the University of
+            California, Santa Cruz, studying Computer Science BS and History
             of Consciousness.
           </div>
           <div>
-            I currently work as a Full Stack Web Development Intern at Think
-            Round Inc..
+            I'm currently working on an advanced memory utilization analytics project for Nutanix to gain better insight into their cloud infastructure memory usage.
           </div>
           <div>
             I aspire to continue to build efficient applications that provide
