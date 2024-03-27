@@ -3,8 +3,8 @@ import profile from "../../public/profile.png";
 
 export default function AboutMe() {
   return (
-    <div className="py-3 sm:py-12 grid place-items-center">
-      <div className="grid sm:grid-cols-7 sm:grid-rows-1 max-w-3xl text-base font-normal leading-6 text-slate-200">
+    <div className="py-3 sm:py-12 grid place-items-center font-mono">
+      <div className="grid sm:grid-cols-7 sm:grid-rows-1 max-w-3xl text-base font-normal leading-6 text-slate-100">
         {/* Mobile text start */}
         <div className="block sm:hidden pt-4 px-3 text-center">
           <div className="pb-2">

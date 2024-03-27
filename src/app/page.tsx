@@ -30,7 +30,7 @@ export default function Home() {
         <br />
         <br />
         <br />
-        <div id="experience" className="pt-16">
+        <div id="experience" className="py-10 bg-navy">
           <Experience />
         </div>
         <br />
