@@ -10,7 +10,7 @@ const projects = [
     webpageDescription: `Discover`,
     webpageIcon: true,
     description: [
-      `I co-pioneered this comprehensive web application tool to help UCSC students plan their future classes.`,
+      `I co-pioneered this web application tool to help UCSC students comprehensively plan their future classes.`,
       `With support for over 1,500 courses, Slug Path makes degree planning simple.`,
       `(This project was selected by a professor for continued development, and is currently in the process of being integrated with the official university system!)`,
     ],

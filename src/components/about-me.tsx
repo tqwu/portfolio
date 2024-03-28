@@ -42,7 +42,7 @@ export default function AboutMe() {
             optimal user experiences.
           </div>
           <div>
-            Outside of my technical studies, I enjoy hobbies that exercise my
+            Outside of my technical studies, I enjoy hobbies that exercise
             creativity! I love trying new recipes, tending to novel plants, and
             I am passionate about fashion design and crafting funky new clothes.
           </div>
@@ -56,7 +56,7 @@ export default function AboutMe() {
             optimal user experiences.
           </div>
           <div>
-            Outside of my technical studies, I enjoy hobbies that exercise my
+            Outside of my technical studies, I enjoy hobbies that exercise
             creativity! I love trying new recipes, tending to novel plants, and
             I am passionate about fashion design and crafting funky new clothes.
           </div>
