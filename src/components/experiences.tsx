@@ -16,18 +16,6 @@ const experiences = [
     ],
   },
   {
-    title: `Full Stack Developer Intern`,
-    company: `Think Round, Inc.`,
-    logo: `/ThinkRound.png`,
-    location: `San Francisco, CA`,
-    dates: `Jun 2023 - Sep 2023`,
-    technologies: `React, Node.js, Next.js, PostgreSQL, Tailwind CSS, TypeScript`,
-    description: [
-      `Created website with industry-standard UI/UX and accessibility practices, achieving 98% client satisfaction rate`,
-      `Presented web application at a Grand Launch unveiling, receiving 100% benefactor and founder approval`,
-    ],
-  },
-  {
     title: `Engineering Tutor`,
     company: `University of California, Santa Cruz`,
     logo: `/Baskin.png`,
@@ -38,6 +26,18 @@ const experiences = [
       `Tutored for a Computer Systems course with assignments programmed in C`,
       `Held multiple weekly tutoring sessions for 150+ students`,
       `Reviewed course material and assisted students with programming assignments, successfully resolving over 95% of student bugs`,
+    ],
+  },
+  {
+    title: `Full Stack Developer Intern`,
+    company: `Think Round, Inc.`,
+    logo: `/ThinkRound.png`,
+    location: `San Francisco, CA`,
+    dates: `Jun 2023 - Sep 2023`,
+    technologies: `React, Node.js, Next.js, PostgreSQL, Tailwind CSS, TypeScript`,
+    description: [
+      `Created website with industry-standard UI/UX and accessibility practices, achieving 98% client satisfaction rate`,
+      `Presented web application at a Grand Launch unveiling, receiving 100% benefactor and founder approval`,
     ],
   },
   {
@@ -59,7 +59,9 @@ export default function Experiences() {
   return (
     <div className="px-5 text-slate-200 font-mono grid pt-12 pb-16">
       <div className="text-5xl place-self-center pb-4">Experiences</div>
-      <div className="text-lg place-self-center pb-6">~ some of my key career highlights ~</div>
+      <div className="text-lg place-self-center pb-6">
+        ~ some of my key career highlights ~
+      </div>
 
       <div className="place-self-center w-2/3">
         {experiences.map((experience) => (
@@ -69,7 +71,9 @@ export default function Experiences() {
           >
             <div className="col-span-2 pl-2">
               <div className="text-2xl pb-1">{experience.title}</div>
-              <div className="text-sm col-span-3 pb-2 text-slate-400">{experience.technologies}</div>
+              <div className="text-sm col-span-3 pb-2 text-slate-400">
+                {experience.technologies}
+              </div>
               <div>{experience.location}</div>
               <div>{experience.dates}</div>
             </div>

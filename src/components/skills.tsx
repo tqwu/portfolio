@@ -11,12 +11,16 @@ export default function Skills() {
 
         <div>
           <span className="text-3xl">Technologies: </span>
-          <span className="">React, Node.js, Next.js, Express.js, Vercel, PostgreSQL, Docker, Git</span>
+          <span className="">
+            React, Node.js, Next.js, Express.js, Vercel, PostgreSQL, Docker, Git
+          </span>
         </div>
 
         <div>
           <span className="text-3xl">Knowledge: </span>
-          <span className="">Agile/Scrum Methodologies, System Design, REST, GraphQL</span>
+          <span className="">
+            Agile/Scrum Methodologies, System Design, REST, GraphQL
+          </span>
         </div>
       </div>
     </div>

@@ -61,25 +61,8 @@ export default function Example() {
           >
             Projects
           </Link>
-          <Link
-            href="#about-me"
-            className="text-base font-semibold leading-6 text-slate-200 hover:text-slate-500"
-          >
-            More About Me
-          </Link>
         </Popover.Group>
         {/* Desktop Navigation Menu End */}
-
-        {/* Resume Start */}
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link
-            href="#"
-            className="text-base font-semibold leading-6 text-slate-200 hover:text-slate-500"
-          >
-            Resume
-          </Link>
-        </div>
-        {/* Resume End */}
       </nav>
 
       {/* Mobile View Start */}

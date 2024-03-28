@@ -27,32 +27,10 @@ export default function Home() {
         >
           <Experiences />
         </div>
-        <div
-          id="projects"
-          style={{ scrollMarginTop: "60px" }}
-        >
+        <div id="projects" style={{ scrollMarginTop: "60px" }}>
           <Projects />
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <div id="about-me" style={{ scrollMarginTop: "60px" }}>
-          This is the about me section.
-        </div>
-        <div id="about-me" style={{ scrollMarginTop: "60px" }}>
+        <div id="footer" className="bg-navy">
           <Footer />
         </div>
       </main>

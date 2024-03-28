@@ -10,9 +10,9 @@ const projects = [
     webpageDescription: `Discover`,
     webpageIcon: true,
     description: [
-      `I co-pioneered this comprehensive tool to help UCSC students plan their future classes.`,
+      `I co-pioneered this comprehensive web application tool to help UCSC students plan their future classes.`,
       `With support for over 1,500 courses, Slug Path makes degree planning simple.`,
-      `(This project was selected by a professor for continued development, and is currently in the process of being integrated with the official university system!)`
+      `(This project was selected by a professor for continued development, and is currently in the process of being integrated with the official university system!)`,
     ],
   },
   {
@@ -34,9 +34,7 @@ const projects = [
     webpage: ``,
     webpageDescription: `You're looking at it!`,
     webpageIcon: false,
-    description: [
-      `A fun personal website!`,
-    ],
+    description: [`A fun personal website!`],
   },
 ];
 
@@ -44,7 +42,9 @@ export default function Projects() {
   return (
     <div className="px-5 text-slate-200 font-mono grid pt-12 pb-16">
       <div className="text-5xl place-self-center pb-4">Projects</div>
-      <div className="text-lg place-self-center pb-6">~ some of my favorite projects I&apos;ve worked on ~</div>
+      <div className="text-lg place-self-center pb-6">
+        ~ some of my favorite projects I&apos;ve worked on ~
+      </div>
 
       <div className="place-self-center w-4/5">
         {projects.map((project) => (
@@ -54,7 +54,9 @@ export default function Projects() {
           >
             <div className="place-self-center col-span-1 pl-2">
               <div className="text-2xl pb-2">{project.title}</div>
-              <div className="text-sm col-span-3 pb-2 text-slate-400">{project.technologies}</div>
+              <div className="text-sm col-span-3 pb-2 text-slate-400">
+                {project.technologies}
+              </div>
               <ul className="text-sm pt-2 col-span-3">
                 {project.description.map((item, index) => (
                   <li key={index} className="py-1.5">
@@ -63,14 +65,29 @@ export default function Projects() {
                 ))}
               </ul>
               <div className="grid w-full place-items-center">
-                <a href={project.webpage} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={project.webpage}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <button className="flex items-center gap-2 bg-slate-400 hover:bg-slate-300 text-navy font-normal mt-4 py-2 px-4 rounded-full border border-white">
                     {project.webpageDescription}
-                    {project.webpageIcon &&
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-4 h-4">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    {project.webpageIcon && (
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={3}
+                        stroke="currentColor"
+                        className="w-4 h-4"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                        />
                       </svg>
-                    }
+                    )}
                   </button>
                 </a>
               </div>

@@ -42,8 +42,9 @@ export default function AboutMe() {
             optimal user experiences.
           </div>
           <div>
-            Check out my LinkedIn to learn more about me, or explore my GitHub
-            to see some of my projects!
+            Outside of my technical studies, I enjoy hobbies that exercise my
+            creativity! I love trying new recipes, tending to novel plants, and
+            I am passionate about fashion design and crafting funky new clothes.
           </div>
         </div>
         {/* Desktop paragraph end */}
@@ -55,8 +56,9 @@ export default function AboutMe() {
             optimal user experiences.
           </div>
           <div>
-            Check out my LinkedIn to learn more about me, or explore my GitHub
-            to see some of my projects!
+            Outside of my technical studies, I enjoy hobbies that exercise my
+            creativity! I love trying new recipes, tending to novel plants, and
+            I am passionate about fashion design and crafting funky new clothes.
           </div>
         </div>
         {/* Mobile text end */}
