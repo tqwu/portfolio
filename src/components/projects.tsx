@@ -42,17 +42,18 @@ export default function Projects() {
   return (
     <div className="px-5 text-slate-200 font-mono grid pt-12 pb-16">
       <div className="text-5xl place-self-center pb-4">Projects</div>
-      <div className="text-lg place-self-center pb-6">
-        ~ some of my favorite projects I&apos;ve worked on ~
+      <div className="text-center text-sm sm:text-lg place-self-center pb-6">
+        some of my favorite projects I&apos;ve worked on
       </div>
 
-      <div className="place-self-center w-4/5">
+      <div className="place-self-center sm:w-4/5">
         {projects.map((project) => (
           <div
             key={project.title}
             className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-1 border-2 rounded-xl border-slate-500 py-6 px-3 my-12 my-2"
           >
-            <div className="place-self-center col-span-1 pl-2">
+            {/* Project Description Begin */}
+            <div className="place-self-center col-span-1 pl-2 max-w-2xl">
               <div className="text-2xl pb-2">{project.title}</div>
               <div className="text-sm col-span-3 pb-2 text-slate-400">
                 {project.technologies}
@@ -92,6 +93,7 @@ export default function Projects() {
                 </a>
               </div>
             </div>
+            {/* Project Description End */}
 
             <div className="col-span-1 place-self-center p-1.5 md:ml-6">
               <Image

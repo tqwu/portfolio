@@ -59,17 +59,17 @@ export default function Experiences() {
   return (
     <div className="px-5 text-slate-200 font-mono grid pt-12 pb-16">
       <div className="text-5xl place-self-center pb-4">Experiences</div>
-      <div className="text-lg place-self-center pb-6">
-        ~ some of my key career highlights ~
+      <div className="text-center text-sm sm:text-lg place-self-center pb-6">
+        some of my key career highlights
       </div>
 
-      <div className="place-self-center w-2/3">
+      <div className="place-self-center sm:w-2/3">
         {experiences.map((experience) => (
           <div
             key={experience.title}
             className="grid gap-1 grid-cols-3 border-2 rounded-xl border-slate-500 py-6 px-3 my-12 my-2"
           >
-            <div className="col-span-2 pl-2">
+            <div className="col-span-3 lg:col-span-2 pl-2">
               <div className="text-2xl pb-1">{experience.title}</div>
               <div className="text-sm col-span-3 pb-2 text-slate-400">
                 {experience.technologies}
