@@ -33,8 +33,9 @@ const experiences = [
     logo: `/Baskin.png`,
     location: `Santa Cruz, CA`,
     dates: `Dec 2023 - Present`,
-    technologies: `for Computer Systems Design`,
+    technologies: ``,
     description: [
+      `Tutored for a Computer Systems course with assignments programmed in C`,
       `Held multiple weekly tutoring sessions for 150+ students`,
       `Reviewed course material and assisted students with programming assignments, successfully resolving over 95% of student bugs`,
     ],
@@ -54,10 +55,11 @@ const experiences = [
   },
 ];
 
-export default function Experience() {
+export default function Experiences() {
   return (
     <div className="px-5 text-slate-200 font-mono grid pt-12 pb-16">
-      <div className="text-5xl place-self-center pb-8">Experiences</div>
+      <div className="text-5xl place-self-center pb-4">Experiences</div>
+      <div className="text-lg place-self-center pb-6">~ some of my key career highlights ~</div>
 
       <div className="place-self-center w-2/3">
         {experiences.map((experience) => (
@@ -66,17 +68,18 @@ export default function Experience() {
             className="grid gap-1 grid-cols-3 border-2 rounded-xl border-slate-500 py-6 px-3 my-12 my-2"
           >
             <div className="col-span-2 pl-2">
-              <div className="text-2xl pb-2">{experience.title}</div>
+              <div className="text-2xl pb-1">{experience.title}</div>
+              <div className="text-sm col-span-3 pb-2 text-slate-400">{experience.technologies}</div>
               <div>{experience.location}</div>
               <div>{experience.dates}</div>
             </div>
-            <div className="col-span-1 p-1.5 mr-3 w-64 grid justify-self-end items-center hidden md:block">
+            <div className="col-span-1 p-1.5 mr-3 w-64 grid justify-self-end items-center hidden lg:block">
               <Image
                 className=""
                 src={experience.logo}
                 height={500}
                 width={350}
-                alt="Avatar of Teresa Wu"
+                alt={`${experience.company} Logo`}
                 priority
               />
             </div>
