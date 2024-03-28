@@ -50,10 +50,10 @@ export default function Projects() {
         {projects.map((project) => (
           <div
             key={project.title}
-            className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-1 border-2 rounded-xl border-slate-500 py-6 px-3 my-12 my-2"
+            className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-1 2xl:gap-16 border-2 rounded-xl border-slate-500 py-6 px-3 my-12 my-2"
           >
             {/* Project Description Begin */}
-            <div className="place-self-center col-span-1 pl-2 max-w-2xl">
+            <div className="place-self-center col-span-1 pl-2 max-w-2xl xl:justify-self-end">
               <div className="text-2xl pb-2">{project.title}</div>
               <div className="text-sm col-span-3 pb-2 text-slate-400">
                 {project.technologies}
@@ -95,7 +95,7 @@ export default function Projects() {
             </div>
             {/* Project Description End */}
 
-            <div className="col-span-1 place-self-center p-1.5 md:ml-6">
+            <div className="col-span-1 place-self-center p-1.5 md:ml-6 xl:justify-self-start">
               <Image
                 className="rounded-xl"
                 src={project.preview}
