@@ -2,7 +2,9 @@ import Header from "../components/header";
 import Intro from "../components/intro";
 import AboutMe from "../components/about-me";
 import Skills from "../components/skills";
-import Experience from "../components/experience";
+import Experiences from "../components/experiences";
+import Projects from "../components/projects";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -23,26 +25,13 @@ export default function Home() {
           className="bg-navy"
           style={{ scrollMarginTop: "60px" }}
         >
-          <Experience />
+          <Experiences />
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <div id="projects" style={{ scrollMarginTop: "60px" }}>
-          This is the projects section.
+        <div
+          id="projects"
+          style={{ scrollMarginTop: "60px" }}
+        >
+          <Projects />
         </div>
         <br />
         <br />
@@ -62,6 +51,9 @@ export default function Home() {
         <br />
         <div id="about-me" style={{ scrollMarginTop: "60px" }}>
           This is the about me section.
+        </div>
+        <div id="about-me" style={{ scrollMarginTop: "60px" }}>
+          <Footer />
         </div>
       </main>
     </>
