@@ -17,14 +17,15 @@ export default function Example() {
         {/* Logos Start */}
         <div className="flex flex-1 gap-4">
           {/* Socials Begin */}
-          <div className="flex flex-row gap-4 mt-0.5">
+          <div className="flex flex-row gap-4">
             {/* Github */}
             <a
               href="https://github.com/tqwu"
               target="_blank"
               rel="noopener noreferrer"
+              className=" hover:opacity-50"
             >
-              <span className="[&>svg]:h-4 [&>svg]:w-4">
+              <span className="[&>svg]:h-5 [&>svg]:w-5">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="white"
@@ -39,8 +40,9 @@ export default function Example() {
               href="http://linkedin.com/in/-teresa-wu"
               target="_blank"
               rel="noopener noreferrer"
+              className=" hover:opacity-50"
             >
-              <span className="[&>svg]:h-4 [&>svg]:w-4">
+              <span className="[&>svg]:h-5 [&>svg]:w-5">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="white"
