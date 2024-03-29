@@ -69,6 +69,16 @@ export default function Experiences() {
             key={experience.title}
             className="grid gap-1 grid-cols-3 border-2 rounded-xl border-slate-500 py-6 px-3 my-12 my-2"
           >
+            <div className="col-span-3 pb-4 w-2/3 grid justify-self-center items-center block lg:hidden">
+              <Image
+                className=""
+                src={experience.logo}
+                height={500}
+                width={350}
+                alt={`${experience.company} Logo`}
+                priority
+              />
+            </div>
             <div className="col-span-3 lg:col-span-2 pl-2">
               <div className="text-2xl pb-1">{experience.title}</div>
               <div className="text-sm col-span-3 pb-2 text-slate-400">
