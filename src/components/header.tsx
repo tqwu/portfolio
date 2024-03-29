@@ -52,6 +52,7 @@ export default function Example() {
             </a>
           </div>
           {/* Socials End */}
+
           <span className="text-3xl leading-4 text-slate-200">&middot;</span>
           <span className="text-base font-semibold leading-6 text-slate-200">
             Teresa Wu

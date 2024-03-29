@@ -31,7 +31,7 @@ const projects = [
     title: `Portfolio`,
     preview: `/portfolio.png`,
     technologies: `React, Node.js, Next.js, Tailwind CSS, Headless UI, Framer Motion, TypeScript`,
-    webpage: ``,
+    webpage: `https://github.com/tqwu/portfolio`,
     webpageDescription: `You're looking at it!`,
     webpageIcon: false,
     description: [`A fun personal website!`],
