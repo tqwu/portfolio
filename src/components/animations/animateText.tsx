@@ -26,12 +26,17 @@ export default function AnimText({ delay }: IAnimTextProps) {
         setDone(true);
       },
     });
-    return controls.stop;
+
+    return () => {
+      if (controls) {
+        controls.stop();
+      }
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
-    <span className="">
+    <span>
       <motion.span>{displayText}</motion.span>
       {done}
       <RedoAnimText delay={delay + 1} />
