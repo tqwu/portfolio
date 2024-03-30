@@ -10,9 +10,9 @@ const experiences = [
     dates: `Dec 2023 - Present`,
     technologies: `Intel RDT, Docker, Prometheus, Grafana, Go`,
     description: [
-      `Developed a cloud infrastructure monitoring system for advanced memory utilization analytics`,
-      `Achieved enhanced visibility into memory usage patterns, projected to analyze over 6000 VMs`,
-      `Projected to optimize shared resource allocation, enabling close to 100% memory and core utilization`,
+      `Developed an end-to-end memory monitoring system to gain analytical insight into Nutanix&apos;s cloud infrastructure`,
+      `Implemented a data exporter, designed to gather metrics from 6000+ virtual machines`,
+      `Created a custom Grafana dashboard which visualizes collected metrics to diagnose performance issues and detect system bottlenecks, achieving enhanced visibility into memory usage patterns`,
     ],
   },
   {
@@ -23,9 +23,8 @@ const experiences = [
     dates: `Dec 2023 - Present`,
     technologies: ``,
     description: [
-      `Tutored for a Computer Systems course with assignments programmed in C`,
-      `Held multiple weekly tutoring sessions for 150+ students`,
-      `Reviewed course material and assisted students with programming assignments, successfully resolving over 95% of student bugs`,
+      `Instructed 150+ students via weekly tutoring sessions`,
+      `Reviewed course material and assisted students with troubleshooting and debugging programming assignments`,
     ],
   },
   {
@@ -36,8 +35,8 @@ const experiences = [
     dates: `Jun 2023 - Sep 2023`,
     technologies: `React, Node.js, Next.js, PostgreSQL, Tailwind CSS, TypeScript`,
     description: [
-      `Created website with industry-standard UI/UX and accessibility practices, achieving 98% client satisfaction rate`,
-      `Presented web application at a Grand Launch unveiling, receiving 100% benefactor and founder approval`,
+      `Created a website that features the latest Think Round exhibitions and spotlights mental health/wellness resources, developed with industry-standard UI/UX and accessibility practices`,
+      `Presented a live demo of version 1.0 at a Grand Launch unveiling to an audience of 100+ attendees`,
     ],
   },
   {
@@ -48,9 +47,9 @@ const experiences = [
     dates: `September 2022 - Present`,
     technologies: ``,
     description: [
-      `Onboarded and supervised a team of academic peer advisors`,
-      `Organized over 20 successful student events, consistently achieving over 90% projected attendance rates`,
-      `Designed and wrote a bi-weekly Newsletter sent to over 2,000 students`,
+      `Supervised and trained a team of 5 academic peer advisors`,
+      `Organized 20+ successful student outreach events`,
+      `Designed and wrote a bi-weekly newsletter sent to over 2,000 students`,
     ],
   },
 ];
