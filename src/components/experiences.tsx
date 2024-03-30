@@ -10,7 +10,7 @@ const experiences = [
     dates: `Dec 2023 - Present`,
     technologies: `Intel RDT, Docker, Prometheus, Grafana, Go`,
     description: [
-      `Developed an end-to-end memory monitoring system to gain analytical insight into Nutanix&apos;s cloud infrastructure`,
+      `Developed an end-to-end memory monitoring system to gain analytical insight into Nutanix cloud infrastructure`,
       `Implemented a data exporter, designed to gather metrics from 6000+ virtual machines`,
       `Created a custom Grafana dashboard which visualizes collected metrics to diagnose performance issues and detect system bottlenecks, achieving enhanced visibility into memory usage patterns`,
     ],
