@@ -11,7 +11,7 @@ const experiences = [
     technologies: `Intel RDT, Docker, Prometheus, Grafana, Go`,
     description: [
       `Developed an end-to-end memory monitoring system to gain analytical insight into Nutanix cloud infrastructure`,
-      `Implemented a data exporter, designed to gather metrics from 6000+ virtual machines`,
+      `Implemented a data exporter designed to gather metrics from 6000+ virtual machines`,
       `Created a custom Grafana dashboard which visualizes collected metrics to diagnose performance issues and detect system bottlenecks, achieving enhanced visibility into memory usage patterns`,
     ],
   },
@@ -49,7 +49,7 @@ const experiences = [
     description: [
       `Supervised and trained a team of 5 academic peer advisors`,
       `Organized 20+ successful student outreach events`,
-      `Designed and wrote a bi-weekly newsletter sent to over 2,000 students`,
+      `Designed and published bi-weekly newsletters for over 2,000 students`,
     ],
   },
 ];
