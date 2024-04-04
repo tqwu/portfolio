@@ -20,9 +20,9 @@ export default function AboutMe() {
         {/* Mobile text end */}
 
         <Image
-          className="sm:col-span-3 sm:row-span-1 justify-self-center self-center p-2 lg:p-0"
+          className="sm:col-span-3 sm:row-span-1 justify-self-center self-center p-2 lg:p-0 rounded-xl"
           src={profile}
-          height={300}
+          height={380}
           alt="Picture of Teresa Wu"
         />
 
