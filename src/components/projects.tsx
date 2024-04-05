@@ -95,7 +95,7 @@ export default function Projects() {
             </div>
             {/* Project Description End */}
 
-            <div className="col-span-1 place-self-center p-1.5 md:ml-6 xl:justify-self-end">
+            <div className="col-span-1 place-self-center p-1.5 md:ml-6 xl:justify-self-center">
               <Image
                 className="rounded-xl"
                 src={project.preview}
