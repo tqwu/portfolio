@@ -14,7 +14,8 @@ export default function Skills() {
         <div>
           <span className="text-xl sm:text-3xl">Technologies: </span>
           <span className="text-sm sm:text-base">
-            React, Node.js, Next.js, Express.js, Vercel, PostgreSQL, Docker, Git
+            React, Node.js, Next.js, Express.js, Vercel, PostgreSQL, Docker,
+            Prometheus, Grafana, Git
           </span>
         </div>
 
