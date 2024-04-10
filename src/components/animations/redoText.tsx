@@ -8,11 +8,11 @@ export interface IRedoAnimTextProps {
 export default function RedoAnimText({ delay }: IRedoAnimTextProps) {
   const textIndex = useMotionValue(0);
   const texts = [
-    "developer ",
-    "engineer ",
-    "designer ",
-    "tutor ",
-    "plant lover ",
+    "a developer ",
+    "an engineer ",
+    "a designer ",
+    "a tutor ",
+    "a plant lover ",
   ];
 
   const baseText = useTransform(textIndex, (latest) => texts[latest] || "");

@@ -9,7 +9,7 @@ export interface IAnimTextProps {
 
 export default function AnimText({ delay }: IAnimTextProps) {
   const [done, setDone] = useState(false);
-  const baseText = "I am a ";
+  const baseText = "I am ";
   const count = useMotionValue(0);
   const rounded = useTransform(count, (latest) => Math.round(latest));
   const displayText = useTransform(rounded, (latest) =>
