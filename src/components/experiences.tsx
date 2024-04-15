@@ -21,7 +21,7 @@ const experiences = [
     company: `University of California, Santa Cruz`,
     logo: `/Baskin.png`,
     location: `Santa Cruz, CA`,
-    dates: `Dec 2023 - Present`,
+    dates: `Dec 2023 - Mar 2024`,
     description: [
       `Instructed 150+ students via weekly tutoring sessions`,
       `Reviewed course material and assisted students with troubleshooting and debugging programming assignments`,
