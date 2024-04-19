@@ -30,7 +30,7 @@ export default function AboutMe() {
         <div className="hidden sm:grid col-span-4 gap-5 pt-2 pr-7">
           <div>
             I&apos;m Teresa, a senior at the University of California, Santa
-            Cruz, studying Computer Science BS and History of Consciousness.
+            Cruz, studying Computer Science and History of Consciousness.
           </div>
           <div>
             I&apos;m currently working on an advanced memory utilization
