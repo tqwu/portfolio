@@ -9,7 +9,7 @@ export default function AboutMe() {
         <div className="block sm:hidden pt-4 px-3 text-center">
           <div className="pb-2">
             I&apos;m Teresa, a senior at the University of California, Santa
-            Cruz, studying Computer Science BS and History of Consciousness.
+            Cruz, studying Computer Science and History of Consciousness.
           </div>
           <div className="pb-2">
             I&apos;m currently working on an advanced memory utilization

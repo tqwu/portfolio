@@ -10,8 +10,8 @@ const experiences = [
     location: `San Jose, CA`,
     dates: `Jan 2024 - Present`,
     description: [
-      `Developed an end-to-end memory monitoring system to gain analytical insight into Nutanix cloud infrastructure`,
-      `Implemented a data exporter designed to gather metrics virtual machine level metrics`,
+      `Developed an end-to-end memory monitoring system to gain analytical insight into Nutanix's cloud infrastructure`,
+      `Implemented a data exporter designed to gather virtual machine level metrics`,
       `Created a custom Grafana dashboard which visualizes collected metrics to diagnose performance issues and detect system bottlenecks, achieving enhanced visibility into memory usage patterns`,
     ],
   },
