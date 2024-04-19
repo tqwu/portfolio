@@ -3,16 +3,29 @@ import Image from "next/image";
 
 const experiences = [
   {
-    header: `Software Engineering Intern`,
+    header: `Capstone Project Team Member`,
     subheader: `Intel RDT, Docker, Prometheus, Grafana, Go`,
     company: `Nutanix`,
     logo: `/Nutanix.png`,
     location: `San Jose, CA`,
-    dates: `Dec 2023 - Present`,
+    dates: `Jan 2024 - Present`,
     description: [
       `Developed an end-to-end memory monitoring system to gain analytical insight into Nutanix cloud infrastructure`,
-      `Implemented a data exporter designed to gather metrics from 6000+ virtual machines`,
+      `Implemented a data exporter designed to gather metrics virtual machine level metrics`,
       `Created a custom Grafana dashboard which visualizes collected metrics to diagnose performance issues and detect system bottlenecks, achieving enhanced visibility into memory usage patterns`,
+    ],
+  },
+  {
+    header: `Lead Advisor & Editor-in-Chief`,
+    subheader: `Crown College Advising`,
+    company: `University of California, Santa Cruz`,
+    logo: `/UCSC.png`,
+    location: `Santa Cruz, CA`,
+    dates: `September 2022 - Present`,
+    description: [
+      `Supervised and trained a team of 5 academic peer advisors`,
+      `Organized 20+ successful student outreach events`,
+      `Designed and published bi-weekly newsletters for over 2,000 students`,
     ],
   },
   {
@@ -37,19 +50,6 @@ const experiences = [
     description: [
       `Created a website that features the latest Think Round exhibitions and spotlights mental health/wellness resources, developed with industry-standard UI/UX and accessibility practices`,
       `Presented a live demo of version 1.0 at a Grand Launch unveiling to an audience of 100+ attendees`,
-    ],
-  },
-  {
-    header: `Lead Advisor & Editor-in-Chief`,
-    subheader: `Crown College Advising`,
-    company: `University of California, Santa Cruz`,
-    logo: `/UCSC.png`,
-    location: `Santa Cruz, CA`,
-    dates: `September 2022 - Present`,
-    description: [
-      `Supervised and trained a team of 5 academic peer advisors`,
-      `Organized 20+ successful student outreach events`,
-      `Designed and published bi-weekly newsletters for over 2,000 students`,
     ],
   },
 ];
