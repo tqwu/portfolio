@@ -77,7 +77,7 @@ export default function Experiences() {
         some of my key career highlights
       </div>
 
-      <div className="text-center text-sm sm:text-3xl place-self-center py-3">
+      <div className="text-center text-lg sm:text-3xl place-self-center py-3">
         - Technical Experiences -
       </div>
       <div className="grid place-self-center place-items-center md:w-2/3 2xl:w-3/4">
@@ -132,7 +132,7 @@ export default function Experiences() {
         ))}
       </div>
 
-      <div className="text-center text-sm sm:text-3xl place-self-center pt-12 py-3">
+      <div className="text-center text-lg sm:text-3xl place-self-center pt-12 py-3">
         - Leadership Experiences -
       </div>
       <div className="grid place-self-center place-items-center md:w-2/3 2xl:w-3/4">
