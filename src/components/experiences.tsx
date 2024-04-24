@@ -21,7 +21,7 @@ const technical = [
     company: `Think Round, Inc.`,
     logo: `/ThinkRound.png`,
     location: `San Francisco, CA`,
-    dates: `Jun 2023 - Sep 2023`,
+    dates: `Jun 2023 - Oct 2023`,
     description: [
       `Created a website that features the latest Think Round exhibitions and spotlights mental health/wellness resources, developed with industry-standard UI/UX and accessibility practices`,
       `Presented a live demo of version 1.0 at a Grand Launch unveiling to an audience of 100+ attendees`,
