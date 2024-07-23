@@ -3,12 +3,12 @@ import Image from "next/image";
 
 const technical = [
   {
-    header: `Capstone Project Team Member`,
+    header: `Software Engineering Intern`,
     subheader: `Intel RDT, Docker, Prometheus, Grafana, Go`,
     company: `Nutanix`,
     logo: `/Nutanix.png`,
     location: `San Jose, CA`,
-    dates: `Jan 2024 - Present`,
+    dates: `Jan 2024 - Jun 2024`,
     description: [
       `Developed an end-to-end memory monitoring system to gain analytical insight into Nutanix's cloud infrastructure`,
       `Implemented a data exporter designed to gather virtual machine level metrics`,
@@ -36,7 +36,7 @@ const leadership = [
     company: `University of California, Santa Cruz`,
     logo: `/UCSC.png`,
     location: `Santa Cruz, CA`,
-    dates: `September 2022 - Present`,
+    dates: `September 2022 - Jun 2024`,
     description: [
       `Supervised and trained a team of 5 academic peer advisors`,
       `Organized 20+ successful student outreach events`,
