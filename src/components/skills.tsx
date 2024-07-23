@@ -7,7 +7,7 @@ export default function Skills() {
         <div>
           <span className="text-xl sm:text-3xl">Languages: </span>
           <span className="text-sm sm:text-base">
-            TypeScript/JavaScript, C, SQL
+            Python, TypeScript/JavaScript, C, SQL
           </span>
         </div>
 
