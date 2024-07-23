@@ -1,6 +1,6 @@
 # [teresaqwu.com](https://www.teresaqwu.com)
 
-**This website was built with the following technologies:**
+**This website is built with the following technologies:**
 
 - Framework: [Next.js](https://nextjs.org)
 - Deployment: [Vercel](http://vercel.com)
