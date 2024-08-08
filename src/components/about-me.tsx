@@ -29,11 +29,11 @@ export default function AboutMe() {
         {/* Desktop paragraph start */}
         <div className="hidden sm:grid col-span-4 gap-5 pt-2 pr-7 sm:pl-7 md:pl-0">
           <div>
-            I&apos;m Teresa, a senior at the University of California, Santa
-            Cruz, studying Computer Science and History of Consciousness.
+            I&apos;m Teresa, a recent graduate from the University of California, Santa
+            Cruz, where I studied Computer Science and History of Consciousness.
           </div>
           <div>
-            I&apos;m currently working on an advanced memory utilization
+            I most recently worked on an advanced memory utilization
             analytics system for Nutanix to gain better insight into their cloud
             infastructure memory usage.
           </div>
