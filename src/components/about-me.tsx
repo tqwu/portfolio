@@ -8,12 +8,13 @@ export default function AboutMe() {
         {/* Mobile text start */}
         <div className="block sm:hidden pt-4 px-3 text-center">
           <div className="pb-2">
-            I&apos;m Teresa, a recent graduate from the University of California, Santa
-            Cruz, where I studied Computer Science and History of Consciousness.
+            I&apos;m Teresa, a recent graduate from the University of
+            California, Santa Cruz, where I studied Computer Science and History
+            of Consciousness.
           </div>
           <div className="pb-2">
-            I most recently worked on an advanced memory utilization
-            analytics system for Nutanix to gain better insight into their cloud
+            I most recently worked on an advanced memory utilization analytics
+            system for Nutanix to gain better insight into their cloud
             infrastructure memory usage.
           </div>
         </div>
@@ -29,12 +30,13 @@ export default function AboutMe() {
         {/* Desktop paragraph start */}
         <div className="hidden sm:grid col-span-4 gap-5 pt-2 pr-7 sm:pl-7 md:pl-0">
           <div>
-            I&apos;m Teresa, a recent graduate from the University of California, Santa
-            Cruz, where I studied Computer Science and History of Consciousness.
+            I&apos;m Teresa, a recent graduate from the University of
+            California, Santa Cruz, where I studied Computer Science and History
+            of Consciousness.
           </div>
           <div>
-            I most recently worked on an advanced memory utilization
-            analytics system for Nutanix to gain better insight into their cloud
+            I most recently worked on an advanced memory utilization analytics
+            system for Nutanix to gain better insight into their cloud
             infrastructure memory usage.
           </div>
           <div>
