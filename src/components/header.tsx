@@ -37,7 +37,7 @@ export default function Example() {
             </a>
             {/* LinkedIn */}
             <a
-              href="http://linkedin.com/in/-teresa-wu"
+              href="http://linkedin.com/in/tqwu"
               target="_blank"
               rel="noopener noreferrer"
               className=" hover:opacity-50"
