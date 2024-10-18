@@ -1,6 +1,6 @@
 export default function AboutMe() {
   return (
-    <main>
+    <main className="bg-navy-light">
       <div>This is the About Me page.</div>
       <div>Writings</div>
       <div>Plants</div>
