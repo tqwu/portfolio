@@ -1,6 +1,6 @@
 import Header from "../components/header";
 import Intro from "../components/intro";
-import AboutMe from "../components/about-me";
+import AboutMe from "../components/bio";
 import Skills from "../components/skills";
 import Experiences from "../components/experiences";
 import Projects from "../components/projects";
