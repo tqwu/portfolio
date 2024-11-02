@@ -6,7 +6,7 @@ import Divider from "@/components/divider";
 
 export default function HeaderBlog() {
   return (
-    <header className="sticky top-0 bg-amber-100 font-mono font-light text-amber-950">
+    <header className="top-0 bg-amber-100 font-mono font-light text-amber-950">
       <Divider />
       <div className="p-8 grid place-items-center text-4xl">
         <Link href="/blog" className="">
