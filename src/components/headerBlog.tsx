@@ -2,7 +2,7 @@
 import Link from "next/link";
 
 import { Popover } from "@headlessui/react";
-import Divider from "../components/divider";
+import Divider from "@/components/divider";
 
 export default function HeaderBlog() {
   return (

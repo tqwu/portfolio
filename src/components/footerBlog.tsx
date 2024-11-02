@@ -3,6 +3,7 @@ import Divider from "@/components/divider";
 export default function FooterBlog() {
   return (
     <>
+      <hr className="border-0.5 border-amber-950" />
       <div className="bg-amber-100 flex flex-col gap-2 place-items-center text-sm text-amber-950 font-normal font-mono text-center py-4 leading-6">
         <div className="">Thanks for stopping by!</div>
         <div className="">
