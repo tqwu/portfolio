@@ -1,4 +1,4 @@
-export default function Footer() {
+export default function FooterMain() {
   return (
     <div className="bg-navy flex flex-col gap-4 place-items-center text-sm text-slate-400 font-normal font-sans text-center py-4 leading-6">
       <div className="">Thanks for stopping by!</div>
@@ -33,7 +33,7 @@ export default function Footer() {
           href="https://github.com/tqwu/portfolio"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: "#79baec" }}
+          className="text-blue-400 hover:text-blue-300"
         >
           here
         </a>

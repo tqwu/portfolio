@@ -1,12 +1,14 @@
-import HeaderBlog from "../../../components/headerBlog";
+import HeaderBlog from "@/components/headerBlog";
+import FooterBlog from "@/components/footerBlog";
 
 export default function Plants() {
   return (
     <>
       <HeaderBlog />
-      <main>
+      <main className="bg-peach">
         <div>This is the Plants page.</div>
       </main>
+      <FooterBlog />
     </>
   );
 }

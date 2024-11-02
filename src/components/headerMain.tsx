@@ -23,7 +23,7 @@ export default function HeaderMain() {
               href="https://github.com/tqwu"
               target="_blank"
               rel="noopener noreferrer"
-              className=" hover:opacity-50"
+              className="hover:opacity-50"
             >
               <span className="[&>svg]:h-5 [&>svg]:w-5">
                 <svg
@@ -40,7 +40,7 @@ export default function HeaderMain() {
               href="http://linkedin.com/in/tqwu"
               target="_blank"
               rel="noopener noreferrer"
-              className=" hover:opacity-50"
+              className="hover:opacity-50"
             >
               <span className="[&>svg]:h-5 [&>svg]:w-5">
                 <svg

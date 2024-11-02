@@ -1,5 +1,5 @@
-import HeaderBlog from "../../components/headerBlog";
-import Divider from "../../components/divider";
+import HeaderBlog from "@/components/headerBlog";
+import FooterBlog from "@/components/footerBlog";
 
 export default function Blog() {
   return (
@@ -11,7 +11,7 @@ export default function Blog() {
         <div>Plants</div>
         <div>Fashion Design</div>
       </main>
-      <Divider />
+      <FooterBlog />
     </>
   );
 }

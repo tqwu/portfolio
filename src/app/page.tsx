@@ -4,7 +4,7 @@ import Bio from "../components/bio";
 import Skills from "../components/skills";
 import Experiences from "../components/experiences";
 import Projects from "../components/projects";
-import Footer from "@/components/footer";
+import FooterMain from "@/components/footerMain";
 
 export default function Home() {
   return (
@@ -31,7 +31,7 @@ export default function Home() {
           <Projects />
         </div>
       </main>
-      <Footer />
+      <FooterMain />
     </>
   );
 }
