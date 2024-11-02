@@ -1,7 +1,12 @@
+import HeaderBlog from "../../../components/headerBlog";
+
 export default function Writing() {
   return (
-    <main>
-      <div>This is the Writing page.</div>
-    </main>
+    <>
+      <HeaderBlog />
+      <main>
+        <div>This is the Writing page.</div>
+      </main>
+    </>
   );
 }

@@ -1,11 +1,11 @@
 import HeaderBlog from "../../../components/headerBlog";
 
-export default function Fashion() {
+export default function Plants() {
   return (
     <>
       <HeaderBlog />
       <main>
-        <div>This is the Fashion page.</div>
+        <div>This is the Plants page.</div>
       </main>
     </>
   );
