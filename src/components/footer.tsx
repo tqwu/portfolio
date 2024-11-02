@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="flex flex-col gap-4 place-items-center text-sm text-slate-400 font-normal font-sans text-center py-4 leading-6">
+    <div className="bg-navy flex flex-col gap-4 place-items-center text-sm text-slate-400 font-normal font-sans text-center py-4 leading-6">
       <div className="">Thanks for stopping by!</div>
       <div className="place-self-center">
         <a

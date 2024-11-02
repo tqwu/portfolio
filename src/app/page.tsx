@@ -30,10 +30,8 @@ export default function Home() {
         <div id="projects" style={{ scrollMarginTop: "60px" }}>
           <Projects />
         </div>
-        <div id="footer" className="bg-navy">
-          <Footer />
-        </div>
       </main>
+      <Footer />
     </>
   );
 }
