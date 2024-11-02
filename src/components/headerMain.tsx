@@ -5,7 +5,7 @@ import { useState, Fragment } from "react";
 import { Dialog, Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
-export default function Example() {
+export default function HeaderMain() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -102,10 +102,10 @@ export default function Example() {
             Projects
           </Link>
           <Link
-            href="/about-me"
+            href="/blog"
             className="text-base font-semibold leading-6 text-slate-200 hover:text-slate-500"
           >
-            More About Me
+            Blog
           </Link>
         </Popover.Group>
         {/* Desktop Navigation Menu End */}

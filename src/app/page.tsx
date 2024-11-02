@@ -1,4 +1,4 @@
-import Header from "../components/headerMain";
+import HeaderMain from "../components/headerMain";
 import Intro from "../components/intro";
 import Bio from "../components/bio";
 import Skills from "../components/skills";
@@ -9,7 +9,7 @@ import Footer from "@/components/footer";
 export default function Home() {
   return (
     <>
-      <Header />
+      <HeaderMain />
       <main className="bg-navy-light">
         <Intro />
         <Bio />
