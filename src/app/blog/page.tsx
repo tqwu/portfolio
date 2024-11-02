@@ -8,7 +8,7 @@ export default function Blog() {
   return (
     <>
       <HeaderBlog />
-      <main className="bg-peach py-24">
+      <main className="bg-peach py-16">
         <div className="grid grid-cols-2">
           <div className="col-span-1 justify-self-end self-center mt-24">
             <Image className="" src={blogMainSide} alt="" width={450} />
