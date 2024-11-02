@@ -1,7 +1,7 @@
 import Image from "next/image";
 import profile from "../../public/profile.png";
 
-export default function AboutMe() {
+export default function Bio() {
   return (
     <div className="py-3 sm:py-12 grid place-items-center font-mono">
       <div className="grid sm:grid-cols-7 sm:grid-rows-1 max-w-5xl text-base font-normal leading-7 text-slate-100">

@@ -1,6 +1,6 @@
-import Header from "../components/header";
+import Header from "../components/headerMain";
 import Intro from "../components/intro";
-import AboutMe from "../components/bio";
+import Bio from "../components/bio";
 import Skills from "../components/skills";
 import Experiences from "../components/experiences";
 import Projects from "../components/projects";
@@ -12,7 +12,7 @@ export default function Home() {
       <Header />
       <main className="bg-navy-light">
         <Intro />
-        <AboutMe />
+        <Bio />
         <div
           id="skills"
           className="bg-navy"
