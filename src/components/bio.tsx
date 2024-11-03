@@ -1,5 +1,4 @@
 import Image from "next/image";
-import profile from "../../public/profile.png";
 
 export default function Bio() {
   return (
@@ -22,7 +21,8 @@ export default function Bio() {
 
         <Image
           className="sm:col-span-3 sm:row-span-1 justify-self-center self-center p-2 md:p-0 sm:pl-7 rounded-xl"
-          src={profile}
+          src={"/profile.png"}
+          width={300}
           height={380}
           alt="Picture of Teresa Wu"
         />
