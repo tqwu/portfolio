@@ -4,15 +4,15 @@ import Card from "@/components/card";
 
 const writingCards = [
   {
-    title: `Test 1`,
-    description: `Started walking into the water I won't lie I was terrified but I pressed on and I made my way past the breakers as a strange calm came over me.`,
-    endpoint: `/blog`,
+    title: `GRADUATION`,
+    description: `I had the honor of giving my class's 2024 commencement speech.`,
+    endpoint: `/commencement-speech`,
     imageSrc: `/blogMainProfile.png`,
   },
   {
-    title: `Test 2`,
-    description: `Description 2`,
-    endpoint: `/blog`,
+    title: `GIVE & TAKE`,
+    description: `This short dystopian piece awarded me 3rd place in a micro-science-fiction competition in 2019.`,
+    endpoint: `/give-and-take`,
     imageSrc: `/blogMainProfile.png`,
   },
 ];
