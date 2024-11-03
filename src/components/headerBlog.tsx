@@ -21,23 +21,23 @@ export default function HeaderBlog() {
         <Popover.Group className="flex gap-x-12">
           <Link
             href="/blog/writing"
-            className="text-sm leading-6 hover:text-yellow-600"
+            className="text-sm leading-6 hover:opacity-50"
           >
             WRITING
           </Link>
           <Link
             href="/blog/fashion"
-            className="text-sm leading-6 hover:text-yellow-600"
+            className="text-sm leading-6 hover:opacity-50"
           >
             FASHION
           </Link>
           <Link
             href="/blog/plants"
-            className="text-sm leading-6 hover:text-yellow-600"
+            className="text-sm leading-6 hover:opacity-50"
           >
             PLANTS
           </Link>
-          <Link href="/" className="text-sm leading-6 hover:text-yellow-600">
+          <Link href="/" className="text-sm leading-6 hover:opacity-50">
             BACK HOME
           </Link>
         </Popover.Group>
