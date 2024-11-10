@@ -6,6 +6,7 @@ interface CardProps {
   description: string;
   endpoint: string;
   imageSrc: string;
+  buttonText: string;
 }
 
 export default function Card({
@@ -13,6 +14,7 @@ export default function Card({
   description,
   endpoint,
   imageSrc,
+  buttonText,
 }: CardProps) {
   return (
     <>
@@ -23,13 +25,13 @@ export default function Card({
             src={`${imageSrc}`}
             alt=""
             width={450}
-            height={450}
+            height={250}
           />
           <div className="text-4xl">{title}</div>
           <div className="text-sm">{description}</div>
           <Link href={endpoint}>
             <button className="text-sm font-semibold flex items-center gap-2 hover:opacity-50">
-              Read more
+              {buttonText}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

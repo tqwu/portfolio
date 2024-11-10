@@ -7,13 +7,15 @@ const writingCards = [
     title: `GRADUATION`,
     description: `I had the honor of giving my class's 2024 commencement speech.`,
     endpoint: `/commencement-speech`,
-    imageSrc: `/blogMainProfile.png`,
+    imageSrc: `/graduation.jpg`,
+    buttonText: `Listen to it here`,
   },
   {
     title: `GIVE & TAKE`,
     description: `This short dystopian piece awarded me 3rd place in a micro-science-fiction competition in 2019.`,
     endpoint: `/give-and-take`,
     imageSrc: `/blogMainProfile.png`,
+    buttonText: `Read more`,
   },
 ];
 
@@ -30,6 +32,7 @@ export default function Writing() {
                 description={w.description}
                 endpoint={w.endpoint}
                 imageSrc={w.imageSrc}
+                buttonText={w.buttonText}
               />
             </div>
           ))}
