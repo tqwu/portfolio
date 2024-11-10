@@ -9,12 +9,12 @@ export default function Random() {
       <HeaderBlog />
       <main className="bg-indigo-100 font-mono font-light">
         <div className="py-8 text-sm">
-          <div className="text-center pb-6">
+          <div className="text-center pb-6 px-2">
             A page of random facts, theories, and ideas I find interesting!
           </div>
 
           {/* Pigeonhole Principle Begin */}
-          <div className="py-6 bg-indigo-200 px-36">
+          <div className="py-6 bg-indigo-200 px-6 md:px-36">
             <div className="text-xl grid grid-cols-2">
               <span className="col-span-1">PIGEONHOLE PRINCIPLE</span>
               <Image
@@ -41,8 +41,8 @@ export default function Random() {
               A popular example is counting hair (<i>wait no keep reading!</i>)
             </div>
             <div>
-              Let&apos;s say that no one on this planet has more than 1 million hairs
-              on their head. The population of SF Bay Area is well over a
+              Let&apos;s say that no one on this planet has more than 1 million
+              hairs on their head. The population of SF Bay Area is well over a
               million. By the pigeonhole principle, there must be at least (if
               not many more than) two people who have the exact same number of
               hairs on their head (since at least two people have to be in the
@@ -58,8 +58,20 @@ export default function Random() {
           {/* Pigeonhole Principle End */}
 
           {/* Ostrich Algorithm Begin */}
-          <div className="py-12 px-36">
-            <div className="text-xl">OSTRICH ALGORITHM</div>
+          <div className="py-12 px-6 md:px-36">
+            <div className="grid grid-cols-3">
+              <div className="text-xl col-span-1">OSTRICH ALGORITHM</div>
+              <div className="pl-4 col-span-1 flex">
+                <Image
+                  className="place-self-start"
+                  src={"/ostrich.png"}
+                  alt=""
+                  width={40}
+                  height={40}
+                />
+                <span>???</span>
+              </div>
+            </div>
             <br />
             <div>
               Simple and straightforward: this strategy is to simply ignore a
