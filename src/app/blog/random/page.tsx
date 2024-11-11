@@ -79,11 +79,8 @@ export default function Random() {
             </div>
             <br />
             <div>
-              Although typically an algorithm utilized in the field of Computer
-              Science, it could prove useful in one&apos;s daily life!
-              <br />
-              I, for one, as an over-planner, would like a good reason to not
-              prepare for every apocalypse possible.
+              Although typically an algorithm used in the field of Computer
+              Science, perhaps some utilize it in their daily lives.
             </div>
             <br />
             <div>
@@ -93,15 +90,22 @@ export default function Random() {
             <br />
             <div>
               The name is in reference to the <i>false</i> legend of ostriches
-              sticking their heads in the sand when they sense danger. The
-              ostrich effect however, is a very true and very real cognitive
-              bias which hits a little too close to home.
+              sticking their heads in the sand when they sense danger.
+              <br />
+              There is however, a very real <i>ostrich effect</i>, which is a
+              cognitive bias where one avoids useful information because it
+              could be potentially unpleasant.
             </div>
           </div>
           {/* Ostrich Algorithm End */}
 
+          {/* Pigeonhole Principle Begin */}
+          <div className="py-6 bg-indigo-200 px-6 md:px-36">
+            <div className="text-xl">SIZE OF INFINITIES</div>
+          </div>
+          {/* Pigeonhole Principle End */}
+
           <div>Roko&apos;s Basilisk</div>
-          <div>Size of infinites</div>
           <div>Ship of Theseus</div>
           <div>
             This is the random facts page with random things I find interesting.
