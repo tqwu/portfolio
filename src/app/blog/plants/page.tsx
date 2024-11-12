@@ -5,7 +5,7 @@ export default function Plants() {
   return (
     <>
       <HeaderBlog />
-      <main className="bg-peach">
+      <main className="bg-lime-100 font-mono text-sm font-light">
         <div>This is the Plants page.</div>
       </main>
       <FooterBlog />

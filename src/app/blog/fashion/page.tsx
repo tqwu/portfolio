@@ -50,34 +50,28 @@ export default function Fashion() {
 
         {/* Broflovski Hat Begin */}
         <div className="bg-violet-200 py-12 px-9 grid place-items-center">
-          <div className="grid grid-cols-4 w-3/4 gap-16">
-            <div className="col-span-2">
+          <div className="grid grid-cols-5 w-5/6">
+            <Image
+              className="col-span-1 justify-self-end self-center"
+              src={"/designKyleCostume.png"}
+              alt=""
+              width={300}
+              height={300}
+            />
+            <div className="col-span-2 pt-24 pr-4">
               <div className="text-3xl text-right pb-8">
                 KYLE BROFLOVSKI'S HAT
               </div>
-              <div className="grid grid-cols-7">
-                <Image
-                  className="col-span-4 justify-self-end"
-                  src={"/designKyleCostume.png"}
-                  alt=""
-                  width={200}
-                  height={200}
-                />
-                <div className="col-span-3 pt-3">
-                  <div className="text-left pb-6">
-                    For Halloween last year, I decided to go as an iconic
-                    character from one of my favorite shows:
-                    <br />
-                    South Park!
-                  </div>
-                  <div className=" col-span-1 text-left">
-                    His iconic green hat was made with some neon felt and
-                    stuffing.
-                  </div>
-                </div>
+              <div className="text-right pb-6">
+                For Halloween last year, I decided to go as an iconic character
+                from one of my favorite shows: South Park!
+              </div>
+              <div className="text-right">
+                His memorable green hat was made with some neon felt and
+                stuffing.
               </div>
             </div>
-            <div className="col-span-2 self-center">
+            <div className="col-span-2 place-self-center">
               <Image
                 className="rounded-3xl pb-6"
                 src={"/designKyleHat.png"}
