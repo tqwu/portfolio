@@ -14,7 +14,7 @@ const writingCards = [
     title: `GIVE & TAKE`,
     description: `This short dystopian piece awarded me 3rd place in a micro-science-fiction competition in 2019.`,
     endpoint: `/give-and-take`,
-    imageSrc: `/blogMainProfile.png`,
+    imageSrc: `/placeholder.png`,
     buttonText: `Read more`,
   },
 ];
