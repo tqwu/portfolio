@@ -83,6 +83,32 @@ export default function Fashion() {
           </div>
         </div>
         {/* Broflovski Hat End */}
+
+        {/* White Denim Purse Begin */}
+        <div className="px-12 py-24 flex gap-6">
+          <Image
+            className="rounded-3xl"
+            src={"/placeholder.png"}
+            alt=""
+            width={300}
+            height={300}
+          />
+          <Image
+            className="rounded-3xl"
+            src={"/designWhiteDenimBag.png"}
+            alt=""
+            width={630}
+            height={630}
+          />
+          <div className="self-center pb-14">
+            <div className="text-3xl text-left pb-6">WHITE DENIM BAG</div>
+            <div className="text-left">
+              Made with an old pair of jeans and a navy skirt.
+            </div>
+          </div>
+        </div>
+
+        {/* White Denim Purse End */}
       </main>
       <FooterBlog />
     </>
