@@ -60,7 +60,7 @@ export default function Fashion() {
             />
             <div className="col-span-2 pt-24 pr-4">
               <div className="text-3xl text-right pb-8">
-                KYLE BROFLOVSKI'S HAT
+                KYLE BROFLOVSKI&apos;S HAT
               </div>
               <div className="text-right pb-6">
                 For Halloween last year, I decided to go as an iconic character
