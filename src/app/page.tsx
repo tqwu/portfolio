@@ -1,18 +1,18 @@
-import Header from "../components/header";
-import Intro from "../components/intro";
-import AboutMe from "../components/bio";
-import Skills from "../components/skills";
-import Experiences from "../components/experiences";
-import Projects from "../components/projects";
-import Footer from "@/components/footer";
+import HeaderMain from "@/components/headerMain";
+import Intro from "@/components/intro";
+import Bio from "@/components/bio";
+import Skills from "@/components/skills";
+import Experiences from "@/components/experiences";
+import Projects from "@/components/projects";
+import FooterMain from "@/components/footerMain";
 
 export default function Home() {
   return (
     <>
-      <Header />
+      <HeaderMain />
       <main className="bg-navy-light">
         <Intro />
-        <AboutMe />
+        <Bio />
         <div
           id="skills"
           className="bg-navy"
@@ -30,10 +30,8 @@ export default function Home() {
         <div id="projects" style={{ scrollMarginTop: "60px" }}>
           <Projects />
         </div>
-        <div id="footer" className="bg-navy">
-          <Footer />
-        </div>
       </main>
+      <FooterMain />
     </>
   );
 }

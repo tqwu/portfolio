@@ -17,6 +17,7 @@ const config: Config = {
         "pastel-green-light": "#ddf2d1",
         "pastel-green-dark": "#9fd4a3",
         "pastel-brown": "#c2a373",
+        peach: "#ffc3b1",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import avatar404 from "../../public/avatar404.png";
 
 export const metadata: Metadata = {
   title: "Page Not Found",
@@ -14,8 +13,9 @@ export default function NotFound() {
       <div className="max-w-xs h-96 grid grid-rows-2 grid-cols-3 pb-10">
         <Image
           className="row-span-1 col-span-1 self-end"
-          src={avatar404}
+          src={"/avatar404.png"}
           width={100}
+          height={100}
           alt="404 Not Found"
         />
         <div className="row-span-1 col-span-2 self-end text-center font-semibold text-slate-200 pb-3">

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const technical = [
   {
-    header: `Software Engineering Intern`,
+    header: `Capstone Project Team Member`,
     subheader: `Intel RDT, Docker, Prometheus, Grafana, Go`,
     company: `Nutanix`,
     logo: `/Nutanix.png`,

@@ -1,7 +1,6 @@
 import Image from "next/image";
-import profile from "../../public/profile.png";
 
-export default function AboutMe() {
+export default function Bio() {
   return (
     <div className="py-3 sm:py-12 grid place-items-center font-mono">
       <div className="grid sm:grid-cols-7 sm:grid-rows-1 max-w-5xl text-base font-normal leading-7 text-slate-100">
@@ -22,7 +21,8 @@ export default function AboutMe() {
 
         <Image
           className="sm:col-span-3 sm:row-span-1 justify-self-center self-center p-2 md:p-0 sm:pl-7 rounded-xl"
-          src={profile}
+          src={"/profile.png"}
+          width={300}
           height={380}
           alt="Picture of Teresa Wu"
         />
