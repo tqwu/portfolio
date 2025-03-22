@@ -1,5 +1,4 @@
 import Image from "next/image";
-import * as motion from "motion/react-client";
 
 export default function Bio() {
   return (
@@ -30,35 +29,28 @@ export default function Bio() {
 
         {/* Desktop paragraph start */}
         <div className="hidden sm:grid col-span-4 gap-5 pt-2 pr-7 sm:pl-7 md:pl-0">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.5, ease: "easeOut" }}
-          >
-            <div>
-              I&apos;m Teresa, a recent graduate from the University of
-              California, Santa Cruz, where I studied Computer Science and
-              History of Consciousness.
-            </div>
-            <br />
-            <div>
-              I most recently worked on an advanced memory utilization analytics
-              system for Nutanix to gain better insight into their cloud
-              infrastructure memory usage.
-            </div>
-            <br />
-            <div>
-              I aspire to continue to build efficient applications that provide
-              optimal user experiences.
-            </div>
-            <br />
-            <div>
-              Outside of my technical studies, I enjoy hobbies that exercise
-              creativity! I love trying new recipes, tending to novel plants,
-              and I am passionate about fashion design and crafting funky new
-              clothes.
-            </div>
-          </motion.div>
+          <div>
+            I&apos;m Teresa, a recent graduate from the University of
+            California, Santa Cruz, where I studied Computer Science and History
+            of Consciousness.
+          </div>
+          <br />
+          <div>
+            I most recently worked on an advanced memory utilization analytics
+            system for Nutanix to gain better insight into their cloud
+            infrastructure memory usage.
+          </div>
+          <br />
+          <div>
+            I aspire to continue to build efficient applications that provide
+            optimal user experiences.
+          </div>
+          <br />
+          <div>
+            Outside of my technical studies, I enjoy hobbies that exercise
+            creativity! I love trying new recipes, tending to novel plants, and
+            I am passionate about fashion design and crafting funky new clothes.
+          </div>
         </div>
         {/* Desktop paragraph end */}
 
