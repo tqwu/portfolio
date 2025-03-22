@@ -90,8 +90,8 @@ export default function Fashion() {
             className="rounded-3xl"
             src={"/placeholder.png"}
             alt=""
-            width={200}
-            height={200}
+            width={300}
+            height={300}
           />
           <Image
             className="rounded-3xl"
