@@ -1,4 +1,5 @@
 import Divider from "@/components/divider";
+import Link from "next/link";
 
 export default function FooterBlog() {
   return (
@@ -8,14 +9,14 @@ export default function FooterBlog() {
         <div className="">Thanks for stopping by!</div>
         <div className="">
           Check out the code for this site{" "}
-          <a
+          <Link
             href="https://github.com/tqwu/portfolio"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 hover:text-blue-300"
           >
             here
-          </a>
+          </Link>
           !
         </div>
       </div>
