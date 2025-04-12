@@ -15,14 +15,12 @@ export default function AboutMe() {
             transition={{ duration: 1.5, ease: "easeOut" }}
           >
             <div className="pb-2">
-              I&apos;m Teresa, a recent graduate from the University of
-              California, Santa Cruz, where I studied Computer Science and
-              History of Consciousness.
+              I&apos;m Teresa, a Software Development Engineer at Nutanix
+              working in the Platforms team.
             </div>
             <div className="pb-2">
-              I most recently worked on an advanced memory utilization analytics
-              system for Nutanix to gain better insight into their cloud
-              infrastructure memory usage.
+              I received my Bachelor of Science degree in Computer Science from
+              UC Santa Cruz, graduating cum laude.
             </div>
           </motion.div>
         </div>
@@ -43,15 +41,13 @@ export default function AboutMe() {
             transition={{ duration: 1.5, ease: "easeOut" }}
           >
             <div>
-              I&apos;m Teresa, a recent graduate from the University of
-              California, Santa Cruz, where I studied Computer Science and
-              History of Consciousness.
+              I&apos;m Teresa, a Software Development Engineer at Nutanix
+              working in the Platforms team.
             </div>
             <br />
             <div>
-              I most recently worked on an advanced memory utilization analytics
-              system for Nutanix to gain better insight into their cloud
-              infrastructure memory usage.
+              I received my Bachelor of Science degree in Computer Science from
+              UC Santa Cruz, graduating cum laude.
             </div>
             <br />
             <div>

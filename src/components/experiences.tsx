@@ -4,6 +4,15 @@ import * as motion from "motion/react-client";
 
 const technical = [
   {
+    header: `Software Development Engineer`,
+    subheader: `Python`,
+    company: `Nutanix`,
+    logo: `/Nutanix.png`,
+    location: `San Jose, CA`,
+    dates: `Mar 2025 - Current`,
+    description: [`Coming soon...`],
+  },
+  {
     header: `Capstone Project Team Member`,
     subheader: `Intel RDT, Docker, Prometheus, Grafana, Go`,
     company: `Nutanix`,
@@ -91,7 +100,7 @@ export default function Experiences() {
           {technical.map((experience) => (
             <div
               key={experience.header}
-              className="grid gap-1 grid-cols-3 2xl:w-2/3 border-2 rounded-xl border-slate-500 py-6 px-3 my-12 my-2 2xl:px-16"
+              className="grid gap-1 grid-cols-3 w-full 2xl:w-2/3 border-2 rounded-xl border-slate-500 py-6 px-3 my-12 my-2 2xl:px-16"
             >
               {/* Mobile view image */}
               <div className="col-span-3 pb-4 w-2/3 grid justify-self-center place-items-center block lg:hidden">
