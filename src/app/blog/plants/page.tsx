@@ -1,6 +1,24 @@
 import HeaderBlog from "@/components/headerBlog";
 import FooterBlog from "@/components/footerBlog";
 import Link from "next/link";
+import Card from "@/components/card";
+
+const plantCards = [
+  {
+    title: `flowering snake plant`,
+    description: `Under the right conditions, snake plants can flower during the spring`,
+    endpoint: `/snake-plants/flowering`,
+    imageSrc: `/placeholder.png`,
+    buttonText: ``,
+  },
+  {
+    title: `annual poinsettia blooms`,
+    description: `With a bit of planning, you can push your poinsettias to bloom again every year`,
+    endpoint: `/poinsettias/blooms`,
+    imageSrc: `/placeholder.png`,
+    buttonText: ``,
+  },
+];
 
 export default function Plants() {
   return (
@@ -8,6 +26,22 @@ export default function Plants() {
       <HeaderBlog />
       <main className="bg-lime-100 font-mono text-sm font-light">
         <div>This is the Plants page.</div>
+        <div className="grid justify-items-center">
+          <div className="grid grid-cols-4 gap-48 justify-items-center w-3/4 py-12">
+            {plantCards.map((p) => (
+              <div key={p.endpoint} className="col-span-1">
+                <Card
+                  title={p.title}
+                  titleClickable={true}
+                  description={p.description}
+                  endpoint={p.endpoint}
+                  imageSrc={p.imageSrc}
+                  buttonText={p.buttonText}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
         <div>
           <div>Some helpful / interesting resources about plants</div>
           <Link

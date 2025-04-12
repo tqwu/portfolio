@@ -29,6 +29,7 @@ export default function Writing() {
             <div key={w.endpoint} className="col-span-1">
               <Card
                 title={w.title}
+                titleClickable={false}
                 description={w.description}
                 endpoint={w.endpoint}
                 imageSrc={w.imageSrc}

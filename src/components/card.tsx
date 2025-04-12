@@ -3,6 +3,7 @@ import Link from "next/link";
 
 interface CardProps {
   title: string;
+  titleClickable: boolean;
   description: string;
   endpoint: string;
   imageSrc: string;
@@ -11,6 +12,7 @@ interface CardProps {
 
 export default function Card({
   title,
+  titleClickable,
   description,
   endpoint,
   imageSrc,
@@ -24,30 +26,43 @@ export default function Card({
             className=""
             src={`${imageSrc}`}
             alt=""
-            width={450}
-            height={250}
+            width={350}
+            height={350}
           />
-          <div className="text-4xl">{title}</div>
+          {titleClickable ? (
+            <Link
+              href={endpoint}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-2xl text-blue-600 hover:text-blue-300"
+            >
+              {title}
+            </Link>
+          ) : (
+            <div className="text-4xl">{title}</div>
+          )}
           <div className="text-sm">{description}</div>
-          <Link href={endpoint}>
-            <button className="text-sm font-semibold flex items-center gap-2 hover:opacity-50">
-              {buttonText}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={3}
-                stroke="currentColor"
-                className="w-3 h-3"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                />
-              </svg>
-            </button>
-          </Link>
+          {!titleClickable && (
+            <Link href={endpoint}>
+              <button className="text-sm font-semibold flex items-center gap-2 hover:opacity-50">
+                {buttonText}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={3}
+                  stroke="currentColor"
+                  className="w-3 h-3"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </button>
+            </Link>
+          )}
         </div>
       </main>
     </>
