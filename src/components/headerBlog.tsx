@@ -53,6 +53,9 @@ export default function HeaderBlog() {
         aria-label="Navigation Panel Desktop"
       >
         <Popover.Group className="flex gap-x-12">
+          <Link href="/blog" className="text-sm leading-6 hover:opacity-50">
+            LANDING PAGE
+          </Link>
           <Link
             href="/blog/writing"
             className="text-sm leading-6 hover:opacity-50"

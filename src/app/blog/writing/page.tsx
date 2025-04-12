@@ -24,7 +24,7 @@ export default function Writing() {
     <>
       <HeaderBlog />
       <main className="bg-peach font-mono font-light grid justify-items-center">
-        <div className="grid grid-cols-2 justify-items-center w-3/4 py-12">
+        <div className="grid grid-cols-4 gap-48 justify-items-center w-3/4 py-12">
           {writingCards.map((w) => (
             <div key={w.endpoint} className="col-span-1">
               <Card
