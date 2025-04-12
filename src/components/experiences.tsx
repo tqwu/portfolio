@@ -1,7 +1,17 @@
 "use client";
 import Image from "next/image";
+import * as motion from "motion/react-client";
 
 const technical = [
+  {
+    header: `Software Development Engineer`,
+    subheader: `Python`,
+    company: `Nutanix`,
+    logo: `/Nutanix.png`,
+    location: `San Jose, CA`,
+    dates: `Mar 2025 - Current`,
+    description: [`Coming soon...`],
+  },
   {
     header: `Capstone Project Team Member`,
     subheader: `Intel RDT, Docker, Prometheus, Grafana, Go`,
@@ -71,121 +81,128 @@ const leadership = [
 
 export default function Experiences() {
   return (
-    <div className="px-5 text-slate-200 font-mono grid pt-12 pb-16">
-      <div className="text-5xl place-self-center pb-4">Experiences</div>
-      <div className="text-center text-sm sm:text-lg place-self-center pb-6">
-        some of my key career highlights
-      </div>
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1.5, ease: "easeOut" }}
+    >
+      <div className="px-5 text-slate-200 font-mono grid pt-12 pb-16">
+        <div className="text-5xl place-self-center pb-4">Experiences</div>
+        <div className="text-center text-sm sm:text-lg place-self-center pb-6">
+          some of my key career highlights
+        </div>
 
-      <div className="text-center text-2xl sm:text-3xl place-self-center py-3">
-        Technical Experiences
-      </div>
-      <div className="grid place-self-center place-items-center md:w-2/3 2xl:w-3/4">
-        {technical.map((experience) => (
-          <div
-            key={experience.header}
-            className="grid gap-1 grid-cols-3 2xl:w-2/3 border-2 rounded-xl border-slate-500 py-6 px-3 my-12 my-2 2xl:px-16"
-          >
-            {/* Mobile view image */}
-            <div className="col-span-3 pb-4 w-2/3 grid justify-self-center place-items-center block lg:hidden">
-              <Image
-                className=""
-                src={experience.logo}
-                height={500}
-                width={250}
-                alt={`${experience.company} Logo`}
-                priority
-              />
-            </div>
-
-            {/* Experience headings */}
-            <div className="col-span-3 lg:col-span-2 pl-2">
-              <div className="text-2xl pb-1">{experience.header}</div>
-              <div className="text-sm col-span-3 pb-2 text-slate-400">
-                {experience.subheader}
+        <div className="text-center text-2xl sm:text-3xl place-self-center py-3">
+          Technical Experiences
+        </div>
+        <div className="grid place-self-center place-items-center md:w-2/3 2xl:w-3/4">
+          {technical.map((experience) => (
+            <div
+              key={experience.header}
+              className="grid gap-1 grid-cols-3 w-full 2xl:w-2/3 border-2 rounded-xl border-slate-500 py-6 px-3 my-12 my-2 2xl:px-16"
+            >
+              {/* Mobile view image */}
+              <div className="col-span-3 pb-4 w-2/3 grid justify-self-center place-items-center block lg:hidden">
+                <Image
+                  className=""
+                  src={experience.logo}
+                  height={500}
+                  width={250}
+                  alt={`${experience.company} Logo`}
+                  priority
+                />
               </div>
-              <div>{experience.location}</div>
-              <div>{experience.dates}</div>
-            </div>
 
-            {/* Desktop view image */}
-            <div className="col-span-1 p-1.5 mr-3 grid justify-self-end items-center hidden lg:block">
-              <Image
-                className=""
-                src={experience.logo}
-                height={500}
-                width={350}
-                alt={`${experience.company} Logo`}
-                priority
-              />
-            </div>
-
-            {/* Experience description */}
-            <ul className="text-sm list-disc px-6 pt-2 col-span-3">
-              {experience.description.map((item, index) => (
-                <li key={index} className="py-0.5">
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-
-      <div className="text-center text-2xl sm:text-3xl place-self-center pt-12 py-3">
-        Leadership Experiences
-      </div>
-      <div className="grid place-self-center place-items-center md:w-2/3 2xl:w-3/4">
-        {leadership.map((experience) => (
-          <div
-            key={experience.header}
-            className="grid gap-1 grid-cols-3 2xl:w-2/3 border-2 rounded-xl border-slate-500 py-6 px-3 my-12 my-2 2xl:px-16"
-          >
-            {/* Mobile view image */}
-            <div className="col-span-3 pb-4 w-2/3 grid justify-self-center place-items-center block lg:hidden">
-              <Image
-                className=""
-                src={experience.logo}
-                height={500}
-                width={250}
-                alt={`${experience.company} Logo`}
-                priority
-              />
-            </div>
-
-            {/* Experience headings */}
-            <div className="col-span-3 lg:col-span-2 pl-2">
-              <div className="text-2xl pb-1">{experience.header}</div>
-              <div className="text-sm col-span-3 pb-2 text-slate-400">
-                {experience.subheader}
+              {/* Experience headings */}
+              <div className="col-span-3 lg:col-span-2 pl-2">
+                <div className="text-2xl pb-1">{experience.header}</div>
+                <div className="text-sm col-span-3 pb-2 text-slate-400">
+                  {experience.subheader}
+                </div>
+                <div>{experience.location}</div>
+                <div>{experience.dates}</div>
               </div>
-              <div>{experience.location}</div>
-              <div>{experience.dates}</div>
-            </div>
 
-            {/* Desktop view image */}
-            <div className="col-span-1 p-1.5 mr-3 grid justify-self-end items-center hidden lg:block">
-              <Image
-                className=""
-                src={experience.logo}
-                height={500}
-                width={350}
-                alt={`${experience.company} Logo`}
-                priority
-              />
-            </div>
+              {/* Desktop view image */}
+              <div className="col-span-1 p-1.5 mr-3 grid justify-self-end items-center hidden lg:block">
+                <Image
+                  className=""
+                  src={experience.logo}
+                  height={500}
+                  width={350}
+                  alt={`${experience.company} Logo`}
+                  priority
+                />
+              </div>
 
-            {/* Experience description */}
-            <ul className="text-sm list-disc px-6 pt-2 col-span-3">
-              {experience.description.map((item, index) => (
-                <li key={index} className="py-0.5">
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+              {/* Experience description */}
+              <ul className="text-sm list-disc px-6 pt-2 col-span-3">
+                {experience.description.map((item, index) => (
+                  <li key={index} className="py-0.5">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        <div className="text-center text-2xl sm:text-3xl place-self-center pt-12 py-3">
+          Leadership Experiences
+        </div>
+        <div className="grid place-self-center place-items-center md:w-2/3 2xl:w-3/4">
+          {leadership.map((experience) => (
+            <div
+              key={experience.header}
+              className="grid gap-1 grid-cols-3 2xl:w-2/3 border-2 rounded-xl border-slate-500 py-6 px-3 my-12 my-2 2xl:px-16"
+            >
+              {/* Mobile view image */}
+              <div className="col-span-3 pb-4 w-2/3 grid justify-self-center place-items-center block lg:hidden">
+                <Image
+                  className=""
+                  src={experience.logo}
+                  height={500}
+                  width={250}
+                  alt={`${experience.company} Logo`}
+                  priority
+                />
+              </div>
+
+              {/* Experience headings */}
+              <div className="col-span-3 lg:col-span-2 pl-2">
+                <div className="text-2xl pb-1">{experience.header}</div>
+                <div className="text-sm col-span-3 pb-2 text-slate-400">
+                  {experience.subheader}
+                </div>
+                <div>{experience.location}</div>
+                <div>{experience.dates}</div>
+              </div>
+
+              {/* Desktop view image */}
+              <div className="col-span-1 p-1.5 mr-3 grid justify-self-end items-center hidden lg:block">
+                <Image
+                  className=""
+                  src={experience.logo}
+                  height={500}
+                  width={350}
+                  alt={`${experience.company} Logo`}
+                  priority
+                />
+              </div>
+
+              {/* Experience description */}
+              <ul className="text-sm list-disc px-6 pt-2 col-span-3">
+                {experience.description.map((item, index) => (
+                  <li key={index} className="py-0.5">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
