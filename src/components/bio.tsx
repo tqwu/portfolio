@@ -1,6 +1,7 @@
 import Image from "next/image";
-import profile from "../../public/profile.png";
 import * as motion from "motion/react-client";
+
+const profile: string = "/profile.png";
 
 export default function AboutMe() {
   return (
@@ -30,7 +31,10 @@ export default function AboutMe() {
           className="sm:col-span-3 sm:row-span-1 justify-self-center self-center p-2 md:p-0 sm:pl-7 rounded-xl"
           src={profile}
           height={380}
+          width={280}
           alt="Picture of Teresa Wu"
+          blurDataURL={profile}
+          placeholder="blur"
         />
 
         {/* Desktop paragraph start */}

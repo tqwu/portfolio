@@ -37,6 +37,8 @@ export default function Intro() {
             height={400}
             width={230}
             alt="Avatar of Teresa Wu"
+            blurDataURL={images[currentImageIndex]}
+            placeholder="blur"
             priority
           />
         </div>
@@ -55,6 +57,8 @@ export default function Intro() {
             height={400}
             width={150}
             alt="Avatar of Teresa Wu"
+            blurDataURL={imagesMobile[currentImageIndex]}
+            placeholder="blur"
             priority
           />
         </div>

@@ -28,6 +28,8 @@ export default function Card({
             alt=""
             width={350}
             height={350}
+            blurDataURL={imageSrc}
+            placeholder="blur"
           />
           {titleClickable ? (
             <Link
