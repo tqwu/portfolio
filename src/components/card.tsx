@@ -34,8 +34,6 @@ export default function Card({
           {titleClickable ? (
             <Link
               href={endpoint}
-              target="_blank"
-              rel="noopener noreferrer"
               className="text-2xl text-blue-600 hover:text-blue-300"
             >
               {title}
