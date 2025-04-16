@@ -98,53 +98,61 @@ export default function Experiences() {
         </div>
         <div className="grid place-self-center place-items-center md:w-2/3 2xl:w-3/4">
           {technical.map((experience) => (
-            <div
+            <motion.div
               key={experience.header}
-              className="grid gap-1 grid-cols-3 w-full 2xl:w-2/3 border-2 rounded-xl border-slate-500 py-6 px-3 my-12 my-2 2xl:px-16"
+              whileHover={{
+                scale: [null, 1.05],
+                transition: {
+                  duration: 0.3,
+                  ease: ["easeInOut", "easeOut"],
+                },
+              }}
             >
-              {/* Mobile view image */}
-              <div className="col-span-3 pb-4 w-2/3 grid justify-self-center place-items-center block lg:hidden">
-                <Image
-                  className=""
-                  src={experience.logo}
-                  height={500}
-                  width={250}
-                  alt={`${experience.company} Logo`}
-                  priority
-                />
-              </div>
-
-              {/* Experience headings */}
-              <div className="col-span-3 lg:col-span-2 pl-2">
-                <div className="text-2xl pb-1">{experience.header}</div>
-                <div className="text-sm col-span-3 pb-2 text-slate-400">
-                  {experience.subheader}
+              <div className="grid gap-1 grid-cols-3 w-full 2xl:w-2/3 border-2 rounded-xl border-slate-500 py-6 px-3 my-2 2xl:px-16">
+                {/* Mobile view image */}
+                <div className="col-span-3 pb-4 w-2/3 grid justify-self-center place-items-center block lg:hidden">
+                  <Image
+                    className=""
+                    src={experience.logo}
+                    height={500}
+                    width={250}
+                    alt={`${experience.company} Logo`}
+                    priority
+                  />
                 </div>
-                <div>{experience.location}</div>
-                <div>{experience.dates}</div>
-              </div>
 
-              {/* Desktop view image */}
-              <div className="col-span-1 p-1.5 mr-3 grid justify-self-end items-center hidden lg:block">
-                <Image
-                  className=""
-                  src={experience.logo}
-                  height={500}
-                  width={350}
-                  alt={`${experience.company} Logo`}
-                  priority
-                />
-              </div>
+                {/* Experience headings */}
+                <div className="col-span-3 lg:col-span-2 pl-2">
+                  <div className="text-2xl pb-1">{experience.header}</div>
+                  <div className="text-sm col-span-3 pb-2 text-slate-400">
+                    {experience.subheader}
+                  </div>
+                  <div>{experience.location}</div>
+                  <div>{experience.dates}</div>
+                </div>
 
-              {/* Experience description */}
-              <ul className="text-sm list-disc px-6 pt-2 col-span-3">
-                {experience.description.map((item, index) => (
-                  <li key={index} className="py-0.5">
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
+                {/* Desktop view image */}
+                <div className="col-span-1 p-1.5 mr-3 grid justify-self-end items-center hidden lg:block">
+                  <Image
+                    className=""
+                    src={experience.logo}
+                    height={500}
+                    width={350}
+                    alt={`${experience.company} Logo`}
+                    priority
+                  />
+                </div>
+
+                {/* Experience description */}
+                <ul className="text-sm list-disc px-6 pt-2 col-span-3">
+                  {experience.description.map((item, index) => (
+                    <li key={index} className="py-0.5">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </motion.div>
           ))}
         </div>
 
@@ -153,53 +161,61 @@ export default function Experiences() {
         </div>
         <div className="grid place-self-center place-items-center md:w-2/3 2xl:w-3/4">
           {leadership.map((experience) => (
-            <div
+            <motion.div
               key={experience.header}
-              className="grid gap-1 grid-cols-3 2xl:w-2/3 border-2 rounded-xl border-slate-500 py-6 px-3 my-12 my-2 2xl:px-16"
+              whileHover={{
+                scale: [null, 1.05],
+                transition: {
+                  duration: 0.3,
+                  ease: ["easeInOut", "easeOut"],
+                },
+              }}
             >
-              {/* Mobile view image */}
-              <div className="col-span-3 pb-4 w-2/3 grid justify-self-center place-items-center block lg:hidden">
-                <Image
-                  className=""
-                  src={experience.logo}
-                  height={500}
-                  width={250}
-                  alt={`${experience.company} Logo`}
-                  priority
-                />
-              </div>
-
-              {/* Experience headings */}
-              <div className="col-span-3 lg:col-span-2 pl-2">
-                <div className="text-2xl pb-1">{experience.header}</div>
-                <div className="text-sm col-span-3 pb-2 text-slate-400">
-                  {experience.subheader}
+              <div className="grid gap-1 grid-cols-3 2xl:w-2/3 border-2 rounded-xl border-slate-500 py-6 px-3 my-2 2xl:px-16">
+                {/* Mobile view image */}
+                <div className="col-span-3 pb-4 w-2/3 grid justify-self-center place-items-center block lg:hidden">
+                  <Image
+                    className=""
+                    src={experience.logo}
+                    height={500}
+                    width={250}
+                    alt={`${experience.company} Logo`}
+                    priority
+                  />
                 </div>
-                <div>{experience.location}</div>
-                <div>{experience.dates}</div>
-              </div>
 
-              {/* Desktop view image */}
-              <div className="col-span-1 p-1.5 mr-3 grid justify-self-end items-center hidden lg:block">
-                <Image
-                  className=""
-                  src={experience.logo}
-                  height={500}
-                  width={350}
-                  alt={`${experience.company} Logo`}
-                  priority
-                />
-              </div>
+                {/* Experience headings */}
+                <div className="col-span-3 lg:col-span-2 pl-2">
+                  <div className="text-2xl pb-1">{experience.header}</div>
+                  <div className="text-sm col-span-3 pb-2 text-slate-400">
+                    {experience.subheader}
+                  </div>
+                  <div>{experience.location}</div>
+                  <div>{experience.dates}</div>
+                </div>
 
-              {/* Experience description */}
-              <ul className="text-sm list-disc px-6 pt-2 col-span-3">
-                {experience.description.map((item, index) => (
-                  <li key={index} className="py-0.5">
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
+                {/* Desktop view image */}
+                <div className="col-span-1 p-1.5 mr-3 grid justify-self-end items-center hidden lg:block">
+                  <Image
+                    className=""
+                    src={experience.logo}
+                    height={500}
+                    width={350}
+                    alt={`${experience.company} Logo`}
+                    priority
+                  />
+                </div>
+
+                {/* Experience description */}
+                <ul className="text-sm list-disc px-6 pt-2 col-span-3">
+                  {experience.description.map((item, index) => (
+                    <li key={index} className="py-0.5">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </motion.div>
           ))}
         </div>
       </div>
