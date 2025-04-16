@@ -49,16 +49,9 @@ export default function Fashion() {
         {/* Groovy Pants End */}
 
         {/* Broflovski Hat Begin */}
-        <div className="bg-violet-200 py-12 px-9 grid place-items-center">
-          <div className="grid grid-cols-5 w-5/6">
-            <Image
-              className="col-span-1 justify-self-end self-center"
-              src={"/designKyleCostume.png"}
-              alt=""
-              width={300}
-              height={300}
-            />
-            <div className="col-span-2 pt-24 pr-4">
+        <div className="bg-violet-200 py-12 grid place-items-center">
+          <div className="grid place-items-center gap-5 w-1/2">
+            <div className="">
               <div className="text-3xl text-right pb-8">
                 KYLE BROFLOVSKI&apos;S HAT
               </div>
@@ -71,13 +64,24 @@ export default function Fashion() {
                 stuffing.
               </div>
             </div>
-            <div className="col-span-2 place-self-center">
+            <div className="flex flex-row h-full gap-12">
               <Image
-                className="rounded-3xl pb-6"
+                className="rounded-3xl h-full"
+                src={"/placeholder.png"}
+                alt=""
+                width={300}
+                height={300}
+                blurDataURL={"/placeholder.png"}
+                placeholder="blur"
+              />
+              <Image
+                className="rounded-3xl h-full"
                 src={"/designKyleHat.png"}
                 alt=""
                 width={350}
                 height={350}
+                blurDataURL={"/designKyleHat.png"}
+                placeholder="blur"
               />
             </div>
           </div>

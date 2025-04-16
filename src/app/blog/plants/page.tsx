@@ -13,8 +13,15 @@ const plantCards = [
   },
   {
     title: `annual poinsettia blooms`,
-    description: `With a bit of planning, you can push your poinsettias to bloom again every year`,
+    description: `With a bit of planning, you can push your poinsettias to bloom every year`,
     endpoint: `/poinsettias/blooms`,
+    imageSrc: `/placeholder.png`,
+    buttonText: ``,
+  },
+  {
+    title: `bolting cilantro`,
+    description: `[placeholder]`,
+    endpoint: `/cilantro/bolting`,
     imageSrc: `/placeholder.png`,
     buttonText: ``,
   },
