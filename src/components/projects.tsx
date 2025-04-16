@@ -56,6 +56,7 @@ export default function Projects() {
         <div className="grid place-self-center place-items-center sm:w-4/5">
           {projects.map((project) => (
             <motion.div
+              key={project.title}
               whileHover={{
                 scale: [null, 1.05],
                 transition: {
@@ -64,10 +65,7 @@ export default function Projects() {
                 },
               }}
             >
-              <div
-                key={project.title}
-                className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-1 2xl:w-3/4 border-2 rounded-xl border-slate-500 py-6 px-3 my-12 my-2 2xl:px-12"
-              >
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-1 2xl:w-3/4 border-2 rounded-xl border-slate-500 py-6 px-3 my-12 my-2 2xl:px-12">
                 {/* Project Description Begin */}
                 <div className="place-self-center col-span-1 pl-2 max-w-2xl xl:justify-self-end">
                   <div className="text-2xl pb-2">{project.title}</div>
