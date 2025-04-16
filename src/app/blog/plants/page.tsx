@@ -33,17 +33,20 @@ export default function Plants() {
     <>
       <HeaderBlog />
       <main className="bg-lime-100 font-mono text-sm font-light">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1.5, ease: "easeOut" }}
-        >
-          <div>This is the Plants page.</div>
-          <div className="grid justify-items-center">
-            <div className="grid grid-cols-4 gap-48 justify-items-center w-3/4 py-12">
-              {plantCards.map((p) => (
-                <div key={p.endpoint} className="col-span-1">
+        <div>This is the Plants page.</div>
+        <div className="grid justify-items-center">
+          <div className="grid grid-cols-4 gap-48 justify-items-center w-3/4 py-12">
+            {plantCards.map((p, idx) => (
+              <div key={p.endpoint} className="col-span-1">
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.5 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{
+                    duration: 1.2,
+                    delay: idx * 0.2,
+                    ease: [0, 0.71, 0.2, 1.01],
+                  }}
+                >
                   <Card
                     title={p.title}
                     titleClickable={true}
@@ -52,31 +55,31 @@ export default function Plants() {
                     imageSrc={p.imageSrc}
                     buttonText={p.buttonText}
                   />
-                </div>
-              ))}
-            </div>
+                </motion.div>
+              </div>
+            ))}
           </div>
-          <div>
-            <div>Some helpful / interesting resources about plants</div>
-            <Link
-              href="https://pollinator.art/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-300"
-            >
-              Pollinator Pathmaker
-            </Link>
-            <br />
-            <Link
-              href="https://www.youtube.com/@tannertheplanter102"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-300"
-            >
-              Tanner the Planter
-            </Link>
-          </div>
-        </motion.div>
+        </div>
+        <div>
+          <div>Some helpful / interesting resources about plants</div>
+          <Link
+            href="https://pollinator.art/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-300"
+          >
+            Pollinator Pathmaker
+          </Link>
+          <br />
+          <Link
+            href="https://www.youtube.com/@tannertheplanter102"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-300"
+          >
+            Tanner the Planter
+          </Link>
+        </div>
       </main>
       <FooterBlog />
     </>
