@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        "green-forest": "#5dbb63",
         navy: "#171721",
         "navy-light": "#192442",
         "neon-pink": "#ff3c68",
@@ -18,6 +19,7 @@ const config: Config = {
         "pastel-green-dark": "#9fd4a3",
         "pastel-brown": "#c2a373",
         peach: "#ffc3b1",
+        "peach-dark": "#d98586",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

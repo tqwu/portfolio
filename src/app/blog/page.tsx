@@ -14,8 +14,8 @@ export default function Blog() {
           viewport={{ once: true }}
           transition={{ duration: 1.5, ease: "easeOut" }}
         >
-          <div className="grid grid-cols-2">
-            <div className="col-span-1 justify-self-end self-center mt-24">
+          <div className="grid place-items-center lg:grid-cols-2">
+            <div className="hidden lg:block lg:col-span-1 lg:justify-self-end self-center lg:mt-24">
               <Image
                 className=""
                 src={"/blogMainSide.png"}
@@ -24,7 +24,7 @@ export default function Blog() {
                 height={900}
               />
             </div>
-            <div className="col-span-1 justify-self-start self-center mb-24">
+            <div className="lg:col-span-1 lg:justify-self-start self-center lg:mb-24">
               <Image
                 className=""
                 src={"/blogMainProfile.png"}

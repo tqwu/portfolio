@@ -52,7 +52,7 @@ export default function Plants() {
                     description={p.description}
                     endpoint={p.endpoint}
                     imageSrc={p.imageSrc}
-                    borderColor="[#5dbb63]"
+                    borderColor="green-forest"
                     buttonText={p.buttonText}
                   />
                 </motion.div>

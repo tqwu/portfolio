@@ -24,8 +24,8 @@ export default function Writing() {
   return (
     <>
       <HeaderBlog />
-      <main className="bg-peach font-mono font-light grid justify-items-center h-screen">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-48 justify-items-center w-3/4 py-12">
+      <main className="bg-peach font-mono font-light grid justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 lg:gap-48 justify-items-center lg:w-3/4 lg:py-12">
           {writingCards.map((w, idx) => (
             <div key={w.endpoint} className="col-span-1">
               <motion.div
@@ -43,7 +43,7 @@ export default function Writing() {
                   description={w.description}
                   endpoint={w.endpoint}
                   imageSrc={w.imageSrc}
-                  borderColor="[#d98586]"
+                  borderColor="peach-dark"
                   buttonText={w.buttonText}
                 />
               </motion.div>
