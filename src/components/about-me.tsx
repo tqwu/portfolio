@@ -20,7 +20,7 @@ export default function AboutMe() {
             </div>
             <div className="pb-2">
               I received my Bachelor of Science degree in Computer Science from
-              UC Santa Cruz, where I graduated cum laude.
+              UC Santa Cruz, graduating cum laude.
             </div>
           </motion.div>
         </div>
@@ -47,7 +47,7 @@ export default function AboutMe() {
             <br />
             <div>
               I received my Bachelor of Science degree in Computer Science from
-              UC Santa Cruz, where I graduated cum laude.
+              UC Santa Cruz, graduating cum laude.
             </div>
             <br />
             <div>
