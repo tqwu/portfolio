@@ -99,7 +99,6 @@ export default function Experiences() {
         <div className="grid place-self-center place-items-center md:w-2/3 2xl:w-3/4">
           {technical.map((experience) => (
             <motion.div
-              key={experience.header}
               whileHover={{
                 scale: [null, 1.05],
                 transition: {
@@ -108,7 +107,10 @@ export default function Experiences() {
                 },
               }}
             >
-              <div className="grid gap-1 grid-cols-3 w-full 2xl:w-2/3 border-2 rounded-xl border-slate-500 py-6 px-3 my-2 2xl:px-16">
+              <div
+                key={experience.header}
+                className="grid gap-1 grid-cols-3 w-full 2xl:w-2/3 border-2 rounded-xl border-slate-500 py-6 px-3 my-2 2xl:px-16"
+              >
                 {/* Mobile view image */}
                 <div className="col-span-3 pb-4 w-2/3 grid justify-self-center place-items-center block lg:hidden">
                   <Image
@@ -162,7 +164,6 @@ export default function Experiences() {
         <div className="grid place-self-center place-items-center md:w-2/3 2xl:w-3/4">
           {leadership.map((experience) => (
             <motion.div
-              key={experience.header}
               whileHover={{
                 scale: [null, 1.05],
                 transition: {
@@ -171,7 +172,10 @@ export default function Experiences() {
                 },
               }}
             >
-              <div className="grid gap-1 grid-cols-3 2xl:w-2/3 border-2 rounded-xl border-slate-500 py-6 px-3 my-2 2xl:px-16">
+              <div
+                key={experience.header}
+                className="grid gap-1 grid-cols-3 2xl:w-2/3 border-2 rounded-xl border-slate-500 py-6 px-3 my-2 2xl:px-16"
+              >
                 {/* Mobile view image */}
                 <div className="col-span-3 pb-4 w-2/3 grid justify-self-center place-items-center block lg:hidden">
                   <Image
