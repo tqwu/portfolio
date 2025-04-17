@@ -181,6 +181,12 @@ export default function HeaderMain() {
                     >
                       Projects
                     </Link>
+                    <Link
+                      href="/blog"
+                      className="-mx-3 block rounded-lg px-3 py-1 text-base text-center font-semibold leading-7 text-slate-200 hover:text-slate-500"
+                    >
+                      Blog
+                    </Link>
                   </div>
                 </div>
               </div>
