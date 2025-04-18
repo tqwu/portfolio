@@ -2,24 +2,32 @@ import Image from "next/image";
 
 import HeaderBlog from "@/components/headerBlog";
 import FooterBlog from "@/components/footerBlog";
+import ButtonWithArrow from "@/components/buttonWithArrow";
 
 export default function Fashion() {
   return (
     <>
       <HeaderBlog />
-      <main className="bg-violet-100 font-mono font-light text-sm">
+      <main className="bg-violet-100 font-mono font-light text-sm grid place-items-center">
         {/* Groovy Pants Begin */}
-        <div className="grid grid-cols-9 py-20 text-center">
-          <div className="col-span-5 px-9 place-items-center">
+        <div className="grid grid-cols-3 py-20 text-center w-3/4">
+          <div className="col-span-2 grid grid-cols-2 gap-6 px-9 place-items-center">
             <Image
-              className="rounded-3xl"
-              src={"/designPants.png"}
+              className="col-span-1 rounded-3xl self-center"
+              src={"/placeholder.png"}
               alt=""
-              width={900}
-              height={900}
+              width={400}
+              height={400}
+            />
+            <Image
+              className="col-span-1 rounded-3xl self-center"
+              src={"/placeholder.png"}
+              alt=""
+              width={400}
+              height={400}
             />
           </div>
-          <div className="col-span-4 pr-8 place-self-center">
+          <div className="col-span-1 pr-8 place-self-center">
             <div className="flex flex-col gap-4 pb-4">
               <div className="text-3xl text-left">GROOVY PANTS</div>
               <div className="text-justify">
@@ -27,21 +35,9 @@ export default function Fashion() {
                 pattern and pieced them together to create this funky denim
                 look.
               </div>
-            </div>
-            <div className="grid grid-cols-2">
-              <Image
-                className="col-span-1 rounded-3xl self-center pr-2"
-                src={"/placeholder.png"}
-                alt=""
-                width={350}
-                height={350}
-              />
-              <Image
-                className="col-span-1 rounded-3xl self-center"
-                src={"/placeholder.png"}
-                alt=""
-                width={350}
-                height={350}
+              <ButtonWithArrow
+                buttonText="Read more"
+                endpoint="/groovy-pants"
               />
             </div>
           </div>
