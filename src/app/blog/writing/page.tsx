@@ -7,14 +7,14 @@ const writingCards = [
   {
     title: `GRADUATION`,
     description: `I had the honor of giving my class's 2024 commencement speech.`,
-    endpoint: `/commencement-speech`,
+    endpoint: `commencement-speech`,
     imageSrc: `/graduation.png`,
     buttonText: `Listen to it here`,
   },
   {
     title: `GIVE & TAKE`,
     description: `This short dystopian piece awarded me 3rd place in a micro-science-fiction competition when I was 17.`,
-    endpoint: `/give-and-take`,
+    endpoint: `give-and-take`,
     imageSrc: `/giveAndTake.png`,
     buttonText: `Read more`,
   },

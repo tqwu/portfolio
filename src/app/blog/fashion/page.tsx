@@ -37,7 +37,7 @@ export default function Fashion() {
               </div>
               <ButtonWithArrow
                 buttonText="Read more"
-                endpoint="/groovy-pants"
+                endpoint="groovy-pants"
               />
             </div>
           </div>
