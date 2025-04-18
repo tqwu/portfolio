@@ -8,9 +8,9 @@ export default function Fashion() {
   return (
     <>
       <HeaderBlog />
-      <main className="bg-violet-100 font-mono font-light text-sm grid place-items-center">
+      <main className="bg-violet-100 font-mono font-light text-sm grid pt-16 gap-16 place-items-center">
         {/* Groovy Pants Begin */}
-        <div className="grid grid-cols-3 py-20 text-center w-3/4">
+        <div className="grid grid-cols-3 text-center w-3/4">
           <div className="col-span-2 grid grid-cols-2 gap-6 px-9 place-items-center">
             <Image
               className="col-span-1 rounded-3xl self-center"
@@ -35,57 +35,49 @@ export default function Fashion() {
                 pattern and pieced them together to create this funky denim
                 look.
               </div>
-              <ButtonWithArrow
-                buttonText="Read more"
-                endpoint="groovy-pants"
-              />
+              <ButtonWithArrow buttonText="Read more" endpoint="groovy-pants" />
             </div>
           </div>
         </div>
         {/* Groovy Pants End */}
 
         {/* Broflovski Hat Begin */}
-        <div className="bg-violet-200 py-12 grid place-items-center">
-          <div className="grid place-items-center gap-5 w-1/2">
-            <div className="">
-              <div className="text-3xl text-right pb-8">
-                KYLE BROFLOVSKI&apos;S HAT
-              </div>
-              <div className="text-right pb-6">
-                For Halloween last year, I decided to go as an iconic character
-                from one of my favorite shows: South Park!
-              </div>
-              <div className="text-right">
-                His memorable green hat was made with some neon felt and
-                stuffing.
-              </div>
-            </div>
-            <div className="flex flex-row h-full gap-12">
-              <Image
-                className="rounded-3xl h-full"
-                src={"/placeholder.png"}
-                alt=""
-                width={300}
-                height={300}
-                blurDataURL={"/placeholder.png"}
-                placeholder="blur"
-              />
-              <Image
-                className="rounded-3xl h-full"
-                src={"/designKyleHat.png"}
-                alt=""
-                width={350}
-                height={350}
-                blurDataURL={"/designKyleHat.png"}
-                placeholder="blur"
-              />
+        <div className="bg-violet-200 w-full text-center py-12 grid place-items-center">
+          <div className="grid place-items-center gap-5">
+            <div className="text-3xl">KYLE BROFLOVSKI&apos;S HAT</div>
+            <div className="pb-6">
+              For Halloween last year, I decided to go as an iconic character
+              from one of my favorite shows: South Park!
+              <div className="p-2" />
+              His memorable green hat was made with some neon felt and stuffing.
             </div>
           </div>
+          <div className="grid grid-cols-2 gap-12 pb-8">
+            <Image
+              className="rounded-3xl"
+              src={"/placeholder.png"}
+              alt=""
+              width={300}
+              height={300}
+              blurDataURL={"/placeholder.png"}
+              placeholder="blur"
+            />
+            <Image
+              className="rounded-3xl"
+              src={"/placeholder.png"}
+              alt=""
+              width={300}
+              height={300}
+              blurDataURL={"/placeholder.png"}
+              placeholder="blur"
+            />
+          </div>
+          <ButtonWithArrow buttonText="Read more" endpoint="kyle-hat" />
         </div>
         {/* Broflovski Hat End */}
 
         {/* White Denim Purse Begin */}
-        <div className="px-12 py-24 flex gap-6">
+        <div className="px-12 flex gap-12">
           <Image
             className="rounded-3xl"
             src={"/placeholder.png"}
@@ -93,22 +85,24 @@ export default function Fashion() {
             width={300}
             height={300}
           />
-          <Image
-            className="rounded-3xl"
-            src={"/designWhiteDenimBag.png"}
-            alt=""
-            width={630}
-            height={630}
-          />
-          <div className="self-center pb-14">
-            <div className="text-3xl text-left pb-6">WHITE DENIM BAG</div>
-            <div className="text-left">
+          <div className="flex flex-col gap-4 self-center text-left">
+            <div className="text-3xl">WHITE DENIM BAG</div>
+            <div className="">
               Made with an old pair of jeans and a navy skirt.
             </div>
+            <ButtonWithArrow
+              buttonText="Read more"
+              endpoint="white-denim-bag"
+            />
           </div>
         </div>
-
         {/* White Denim Purse End */}
+
+        {/* Bottega Venetta Begin */}
+        <div className="bg-violet-200 w-full text-center py-12 grid place-items-center">
+          <div className="text-3xl">BOTTEGA VENETTA INSPIRED DENIM BAG</div>
+        </div>
+        {/* Bottega Venetta End */}
       </main>
       <FooterBlog />
     </>
