@@ -32,9 +32,9 @@ export default function Plants() {
   return (
     <>
       <HeaderBlog />
-      <main className="bg-lime-100 font-mono text-sm font-light h-screen">
+      <main className="bg-lime-100 font-mono text-sm font-light">
         <div className="grid justify-items-center">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-56 justify-items-center w-3/4 py-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 md:gap-x-24 lg:gap-56 justify-items-center md:w-3/4 py-12">
             {plantCards.map((p, idx) => (
               <div key={p.endpoint} className="col-span-1">
                 <motion.div
