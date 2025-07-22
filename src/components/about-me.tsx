@@ -15,8 +15,8 @@ export default function AboutMe() {
             transition={{ duration: 1.5, ease: "easeOut" }}
           >
             <div className="pb-2">
-              I&apos;m Teresa, a Software Development Engineer at Nutanix
-              working in the Platforms team.
+              I&apos;m Teresa, a Software Engineer in the Platforms team at
+              Nutanix.
             </div>
             <div className="pb-2">
               I received my Bachelor of Science degree in Computer Science from
@@ -41,8 +41,8 @@ export default function AboutMe() {
             transition={{ duration: 1.5, ease: "easeOut" }}
           >
             <div>
-              I&apos;m Teresa, a Software Development Engineer at Nutanix
-              working in the Platforms team.
+              I&apos;m Teresa, a Software Engineer in the Platforms team at
+              Nutanix.
             </div>
             <br />
             <div>
